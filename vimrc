@@ -1,12 +1,10 @@
 " Pathogen :: https://github.com/tpope/vim-pathogen
 execute pathogen#infect()
 
-
 " Color Scheme
 set t_Co=256
 let g:molokai_original = 1
 colorscheme molokai
-
 
 " ### Customizations ###
 syntax on
@@ -25,3 +23,4 @@ set incsearch
 " Others
 set autoread
 set cursorline
+let mapleader = ","
