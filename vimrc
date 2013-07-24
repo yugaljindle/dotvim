@@ -20,7 +20,11 @@ set smartindent
 set hlsearch
 set ignorecase
 set incsearch
+" Color Overides
+hi LineNr ctermfg=15
+hi LineNr ctermbg=235
 " Others
 set autoread
 set cursorline
+set number
 let mapleader = ","
