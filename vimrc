@@ -27,7 +27,7 @@ set hlsearch
 set ignorecase
 set smartcase
 set incsearch
-" Color Overides
+" Color overides
 hi LineNr ctermfg=15
 hi LineNr ctermbg=235
 " Others
@@ -35,3 +35,10 @@ set autoread
 set cursorline
 set number
 let mapleader = ","
+" Tab switch 
+nnoremap th  :tabfirst<CR>
+nnoremap tj  :tabnext<CR>
+nnoremap tk  :tabprev<CR>
+nnoremap tl  :tablast<CR>
+nnoremap tt  :tabedit<Space>
+nnoremap td  :tabclose<CR>
