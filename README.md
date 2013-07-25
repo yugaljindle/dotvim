@@ -9,11 +9,11 @@ vim customizations by Yugal Jindle
 cd ~
 # Drop '.vim' if already present
 rm -rf ~/.vim
+
 # Create new '.vim'
 mkdir .vim
 cd .vim
 git clone https://github.com/yugal/dotvim.git .
-# Update 'git submodules'
 git submodule foreach git pull origin master
 
 # Add symlink
