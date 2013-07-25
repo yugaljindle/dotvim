@@ -1,12 +1,18 @@
-" Pathogen :: https://github.com/tpope/vim-pathogen
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Pathogen
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 execute pathogen#infect()
 
-" Color Scheme
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Color Scheme
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set t_Co=256
 let g:molokai_original = 1
 colorscheme molokai
 
-" ### Customizations ###
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Customizations
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on
 " Tabs
 set expandtab
@@ -19,6 +25,7 @@ set smartindent
 " Search
 set hlsearch
 set ignorecase
+set smartcase
 set incsearch
 " Color Overides
 hi LineNr ctermfg=15
