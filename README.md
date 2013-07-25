@@ -6,15 +6,16 @@ vim customizations by Yugal Jindle
 ## Installation
 
 ```
-cd ~
-# Drop '.vim' if already present
-rm -rf ~/.vim
+# Backup '.vim' and '.vimrc' if already present
+mv ~/.vim ~/.vim_bak
+mv ~/.vimrc ~/.vimrc_bak
 
 # Create new '.vim'
+cd ~
 mkdir .vim
 cd .vim
 git clone https://github.com/yugal/dotvim.git .
-git submodule foreach git pull origin master
+git submodule update
 
 # Add symlink
 ln -s ~/.vim/vimrc ~/.vimrc
