@@ -63,3 +63,9 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 " Insert mode to Command mode
 inoremap jk <Esc>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Auto Commands
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set nopaste on leaving insert mode
+au InsertLeave * set nopaste
