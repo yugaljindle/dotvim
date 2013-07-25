@@ -15,6 +15,7 @@ cd ~
 mkdir .vim
 cd .vim
 git clone https://github.com/yugal/dotvim.git .
+git submodule init
 git submodule update
 
 # Add symlink
