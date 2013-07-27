@@ -44,16 +44,20 @@ set statusline +=%h/%L%*               "tot  lines
 set statusline +=%h%=\ [col=%c]\       "column number
 set laststatus=2
 " Others
+set number
 set autoread
 set cursorline
-set number
+set pastetoggle=<F2>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Leader bindings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 let mapleader = ","
 " Stop hls
-nmap <silent> ,/ :nohlsearch<CR>
+nmap <silent> <leader>/ :nohlsearch<CR>
+" Quickly edit/reload the vimrc file
+nmap <silent> <leader>ev :e $MYVIMRC<CR>
+nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Key bindings
