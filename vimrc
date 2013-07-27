@@ -1,4 +1,9 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Disable vi fallback
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set nocompatible
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Pathogen
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 execute pathogen#infect()
@@ -7,7 +12,6 @@ execute pathogen#infect()
 " => Color Scheme
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 set t_Co=256
-let g:molokai_original = 1
 colorscheme railscasts
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -42,7 +46,13 @@ set laststatus=2
 set autoread
 set cursorline
 set number
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Leader bindings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let mapleader = ","
+" Stop hls
+nmap <silent> ,/ :nohlsearch<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Key bindings
@@ -71,6 +81,4 @@ vnoremap > >gv
 " => Auto Commands
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set nopaste on leaving insert mode
-au InsertLeave * set nopaste
-" Reloads '.vimrc' when saved
-au BufWritePost .vimrc so ~/.vimrc
+autocmd InsertLeave * set nopaste
