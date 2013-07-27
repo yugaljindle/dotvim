@@ -41,6 +41,7 @@ set statusline +=%h%=[type=%Y]\        "file type
 set statusline +=%h%=[%p%%]\           "file %
 set statusline +=%h%=%l%*              "curr line
 set statusline +=%h/%L%*               "tot  lines
+set statusline +=%h%=\ [col=%c]\       "column number
 set laststatus=2
 " Others
 set autoread
@@ -67,10 +68,10 @@ nnoremap td  :tabclose<CR>
 " Sudo save
 cmap w!! %!sudo tee > /dev/null %
 " Split navigation
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+nnoremap <c-h> <c-w>h
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-l> <c-w>l
 " Insert mode to Command mode
 inoremap jk <Esc>
 " Re-select visual block after indent
@@ -82,3 +83,10 @@ vnoremap > >gv
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set nopaste on leaving insert mode
 autocmd InsertLeave * set nopaste
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => zzz-Overrides
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" .vimrc continued in zzz-Overrides.vim
+" ( Overrides any settings done by 3rd party plugins )
+
