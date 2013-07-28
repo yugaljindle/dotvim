@@ -88,9 +88,15 @@ vnoremap > >gv
 " Set nopaste on leaving insert mode
 autocmd InsertLeave * set nopaste
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Source '~/.vimrc.local' for local customizations
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+if filereadable(glob("~/.vimrc.local")) 
+    source ~/.vimrc.local
+endif
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => zzz-Overrides
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " .vimrc continued in zzz-Overrides.vim
 " ( Overrides any settings done by 3rd party plugins )
-
