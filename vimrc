@@ -48,6 +48,7 @@ set number
 set autoread
 set cursorline
 set pastetoggle=<F2>
+set clipboard=unnamedplus
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Leader bindings
