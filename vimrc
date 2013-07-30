@@ -51,6 +51,13 @@ set pastetoggle=<F2>
 set clipboard=unnamedplus
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Centralize backups, swapfiles and undo history
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set backupdir=~/.vim/backups
+set directory=~/.vim/swaps
+set undodir=~/.vim/undo
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Leader bindings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 let mapleader = ","
