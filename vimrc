@@ -64,8 +64,8 @@ let mapleader = ","
 " Stop hls
 nmap <silent> <leader>/ :nohlsearch<CR>
 " Quickly edit/reload the vimrc file
-nmap <silent> <leader>ev :tabnew $MYVIMRC<CR>
-nmap <silent> <leader>sv :so $MYVIMRC<CR>
+nmap <leader>ev :tabnew $MYVIMRC<CR>
+nmap <leader>sv :so $MYVIMRC<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Key bindings
