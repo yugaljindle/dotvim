@@ -79,6 +79,8 @@ nnoremap tt  :tabedit<Space>
 nnoremap td  :tabclose<CR>
 " Sudo save
 cmap w!! %!sudo tee > /dev/null %
+" Enter <cr> to :
+nnoremap <cr> :
 " Split navigation
 nnoremap <c-h> <c-w>h
 nnoremap <c-j> <c-w>j
