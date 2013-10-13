@@ -89,8 +89,12 @@ nnoremap <c-l> <c-w>l
 " Insert/Visual mode to Command mode
 inoremap fj <Esc>
 vnoremap fj <Esc>
+inoremap jf <Esc>
+vnoremap jf <Esc>
 inoremap FJ <Esc>
 vnoremap FJ <Esc>
+inoremap JF <Esc>
+vnoremap JF <Esc>
 " Re-select visual block after indent
 vnoremap < <gv
 vnoremap > >gv
