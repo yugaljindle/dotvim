@@ -1,9 +1,9 @@
 # .vim
 
-## Description
+### Description
 vim customizations by Yugal Jindle
 
-## Installation
+### Installation
 
 ```
 # Backup '.vim' and '.vimrc' if already present
@@ -20,6 +20,13 @@ git submodule update
 
 # Add symlink
 ln -s ~/.vim/vimrc ~/.vimrc
+```
+
+### Adding new packages ([Pathogen](https://github.com/tpope/vim-pathogen) style)
+```
+# Vim will automatically detect the new package
+cd ~/.vim
+git submodule add https://xyz.com/path/to/git/repository.git bundle/package-name
 ```
 
 # Author
