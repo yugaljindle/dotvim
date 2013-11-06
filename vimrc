@@ -63,6 +63,8 @@ set undodir=~/.vim/undo
 let mapleader = ","
 " Stop hls
 nmap <silent> <leader>/ :nohlsearch<CR>
+" NERDTreeTabsToggle
+nmap <silent> <leader>. :NERDTreeTabsToggle<CR>
 " Quickly edit/reload the vimrc file
 nmap <leader>ev :tabnew $MYVIMRC<CR>
 nmap <leader>sv :so $MYVIMRC<CR>
