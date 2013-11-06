@@ -1,7 +1,7 @@
 # .vim
 
 ### Description
-vim customizations by Yugal Jindle
+vim customizations by **Yugal Jindle**
 
 ### Installation
 
