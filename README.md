@@ -32,7 +32,8 @@ git submodule add https://xyz.com/path/to/git/repository.git bundle/package-name
 cp myplugin.vim ~/.vim/plugin/
 ```
 
-### Feature Highlights:
+Feature Highlights:
+-------------------
 **Intelligent Workflow**
 
 1. Automatically closes **parenthesis**, **braces**, **brackets**, **quotes** as you type.
