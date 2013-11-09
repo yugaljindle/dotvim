@@ -63,8 +63,6 @@ set undodir=~/.vim/undo
 let mapleader = ","
 " Stop hls
 nmap <silent> <leader>/ :nohlsearch<CR>
-" NERDTreeTabsToggle
-nmap <silent> <leader>. :NERDTreeTabsToggle<CR>
 " Quickly edit/reload the vimrc file
 nmap <leader>ev :tabnew $MYVIMRC<CR>
 nmap <leader>sv :so $MYVIMRC<CR>
@@ -79,6 +77,9 @@ nnoremap tk  :tabprev<CR>
 nnoremap tl  :tablast<CR>
 nnoremap tt  :tabedit<Space>
 nnoremap td  :tabclose<CR>
+" Save & Quit
+nmap S :w!<CR>
+nmap Q :q!<CR>
 " Sudo save
 cmap w!! %!sudo tee > /dev/null %
 " Enter <cr> to :
@@ -113,6 +114,18 @@ autocmd InsertLeave * set nopaste
 if filereadable(glob("~/.vimrc.local")) 
     source ~/.vimrc.local
 endif
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Plugin Customizations
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" NERDTreeTab
+nmap <silent> <leader>. :NERDTreeTabsToggle<CR>
+" GitGutter
+nmap gh <Plug>GitGutterNextHunk
+nmap hg <Plug>GitGutterPrevHunk
+let g:gitgutter_sign_removed = '--'
+let g:gitgutter_sign_modified_removed = '~-'
+highlight GitGutterDelete guifg=#ff0000 guibg=NONE ctermfg=1 ctermbg=NONE
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => zzz-Overrides

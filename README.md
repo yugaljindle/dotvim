@@ -1,7 +1,7 @@
 # .vim
 
 ### Description
-Just enough **vim customizations** to enable **IDE style productive workflow** in vim.
+Just enough **vim customizations** to enable **IDE style** or even better **productive workflow** in vim.
 
 ### Installation
 
@@ -42,16 +42,19 @@ cp myplugin.vim ~/.vim/plugin/
 **Productivity addons**
 
 1. Sublime style **ctrl-p** project-wide **fuzzy file search** with [ctrlp](https://github.com/kien/ctrlp.vim.git)
-2. **IDE** style file tree with [NERDTree](https://github.com/scrooloose/nerdtree.git) to explore files in the project
+2. **IDE** style file tree with [NERDTree](https://github.com/scrooloose/nerdtree.git) and [NERDTree Tabs](https://github.com/jistr/vim-nerdtree-tabs.git) to explore files in the project
+    * Press **,.** to toggle **NERDTree** explorer across tabs.
 3. Sublime style **multiple cursors** for editing multiple lines at once with [multiple-cursors](https://github.com/terryma/vim-multiple-cursors.git)
 4. **IDE** style **GIT diff** as [gitgutter](https://github.com/airblade/vim-gitgutter.git)
+    * Jump to **next** diff with **gh**
+    * Jump to **prev** diff with **hg**
 
 **Time Saving keyboard mappings**
 
-1. Press **fj** or **FJ** or **jf** or **JF** in **insert/visual mode** to change to **Command mode**
-2. Press **,/** to exit search highlight after a search with **/**
-3. Press **F2** in **insert mode** to toggle **paste**
-4. Press **,.** to toggle **NERDTree** explorer across tabs.
+1. Save with **shift+s** (**S**) and Quit with **shift-q** (**Q**)
+2. Press **fj** or **FJ** or **jf** or **JF** in **insert/visual mode** to change to **Command mode**
+3. Press **,/** to exit search highlight after a search with **/**
+4. Press **F2** in **insert mode** to toggle **paste**
 5. Easy **tab navigation** with :
     * **th** -> First tab
     * **tj** -> Next tab
