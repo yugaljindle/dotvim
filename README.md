@@ -43,8 +43,15 @@ cp myplugin.vim ~/.vim/plugin/
 4. **IDE** style **GIT diff** as [gitgutter](https://github.com/airblade/vim-gitgutter.git)
     * Jump to **next** diff with **gh**
     * Jump to **prev** diff with **hg**
-5. Automatically closes **parenthesis**, **braces**, **brackets**, **quotes** as you type with [delimitMate](https://github.com/Raimondi/delimitMate.git)
-6. Tab completion of words inside of a search '**/**' with [SearchComplete](http://www.vim.org/scripts/script.php?script_id=474)
+5. **Snippet** completion like **Textmate** with [snipmate](https://github.com/msanders/snipmate.vim)
+6. Fast file **navigation** with [easymotion](https://github.com/Lokaltog/vim-easymotion.git)
+    * **;w** anchor to words
+    * **;j** anchor to lines forward
+    * **;k** anchor to lines backward
+    * **;f** search for character forward
+    * **;F** search for character backward
+7. Automatically closes **parenthesis**, **braces**, **brackets**, **quotes** as you type with [delimitMate](https://github.com/Raimondi/delimitMate.git)
+8. Tab completion of words inside of a search '**/**' with [SearchComplete](http://www.vim.org/scripts/script.php?script_id=474)
 
 **Time Saving keyboard mappings**
 

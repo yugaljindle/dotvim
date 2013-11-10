@@ -127,6 +127,8 @@ nmap hg <Plug>GitGutterPrevHunk
 let g:gitgutter_sign_removed = '--'
 let g:gitgutter_sign_modified_removed = '~-'
 highlight GitGutterDelete guifg=#ff0000 guibg=NONE ctermfg=1 ctermbg=NONE
+" EasyMotion
+let g:EasyMotion_leader_key = ';'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => zzz-Overrides
