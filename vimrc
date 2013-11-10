@@ -18,6 +18,7 @@ colorscheme railscasts
 " => Customizations
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on
+filetype plugin on
 " Tabs
 set expandtab
 set tabstop=4
