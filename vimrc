@@ -99,6 +99,12 @@ inoremap FJ <Esc>
 vnoremap FJ <Esc>
 inoremap JF <Esc>
 vnoremap JF <Esc>
+" Indent with Tab & Shift-Tab
+nnoremap <tab> >>_
+nnoremap <s-tab> <<_
+inoremap <s-tab> <c-d>
+vnoremap <tab> >gv
+vnoremap <s-tab> <gv
 " Re-select visual block after indent
 vnoremap < <gv
 vnoremap > >gv

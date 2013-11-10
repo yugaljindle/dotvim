@@ -34,7 +34,7 @@ cp myplugin.vim ~/.vim/plugin/
 
 # Feature Highlights:
 
-**Productive Workflow with :**
+### Productive Workflow with :
 
 1. Sublime style **ctrl-p** project-wide **fuzzy file search** with [ctrlp](https://github.com/kien/ctrlp.vim.git)
 2. **IDE** style file tree with [NERDTree](https://github.com/scrooloose/nerdtree.git) and [NERDTree Tabs](https://github.com/jistr/vim-nerdtree-tabs.git) to explore files in the project
@@ -53,7 +53,7 @@ cp myplugin.vim ~/.vim/plugin/
 7. Automatically closes **parenthesis**, **braces**, **brackets**, **quotes** as you type with [delimitMate](https://github.com/Raimondi/delimitMate.git)
 8. Tab completion of words inside of a search '**/**' with [SearchComplete](http://www.vim.org/scripts/script.php?script_id=474)
 
-**Time Saving keyboard mappings**
+### Time Saving keyboard mappings
 
 1. Save with **shift+w** (**W**) and Quit with **shift-q** (**Q**)
 2. Press **fj** or **FJ** or **jf** or **JF** in **insert/visual mode** to change to **Command mode**
@@ -76,9 +76,10 @@ cp myplugin.vim ~/.vim/plugin/
     * **Ctrl-j** -> Move cursor down
     * **Ctrl-k** -> Move cursor up
     * **Ctrl-l** -> Move cursor right
-8. Press **Enter** to **:** in command mode
+8. **Indent** & **Un-Indent** with **tab** & **shift-tab** respectively
+9. Press **Enter** to **:** in command mode
 
-**Misc.**
+### Misc.
 
 * Syntax highlighting for **nginx** configuration ( missing in the standard vim install )
 
