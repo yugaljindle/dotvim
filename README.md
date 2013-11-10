@@ -34,12 +34,7 @@ cp myplugin.vim ~/.vim/plugin/
 
 # Feature Highlights:
 
-**Intelligent Workflow**
-
-1. Automatically closes **parenthesis**, **braces**, **brackets**, **quotes** as you type.
-2. Tab completion while searching with **/**
-
-**Productivity addons**
+**Productive Workflow with :**
 
 1. Sublime style **ctrl-p** project-wide **fuzzy file search** with [ctrlp](https://github.com/kien/ctrlp.vim.git)
 2. **IDE** style file tree with [NERDTree](https://github.com/scrooloose/nerdtree.git) and [NERDTree Tabs](https://github.com/jistr/vim-nerdtree-tabs.git) to explore files in the project
@@ -48,10 +43,12 @@ cp myplugin.vim ~/.vim/plugin/
 4. **IDE** style **GIT diff** as [gitgutter](https://github.com/airblade/vim-gitgutter.git)
     * Jump to **next** diff with **gh**
     * Jump to **prev** diff with **hg**
+5. Automatically closes **parenthesis**, **braces**, **brackets**, **quotes** as you type with [delimitMate](https://github.com/Raimondi/delimitMate.git)
+6. Tab completion of words inside of a search '**/**' with [SearchComplete](http://www.vim.org/scripts/script.php?script_id=474)
 
 **Time Saving keyboard mappings**
 
-1. Save with **shift+s** (**S**) and Quit with **shift-q** (**Q**)
+1. Save with **shift+w** (**W**) and Quit with **shift-q** (**Q**)
 2. Press **fj** or **FJ** or **jf** or **JF** in **insert/visual mode** to change to **Command mode**
 3. Press **,/** to exit search highlight after a search with **/**
 4. Press **F2** in **insert mode** to toggle **paste**

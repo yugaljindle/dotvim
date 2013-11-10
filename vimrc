@@ -78,7 +78,7 @@ nnoremap tl  :tablast<CR>
 nnoremap tt  :tabedit<Space>
 nnoremap td  :tabclose<CR>
 " Save & Quit
-nmap S :w!<CR>
+nmap W :w!<CR>
 nmap Q :q!<CR>
 " Sudo save
 cmap w!! %!sudo tee > /dev/null %
