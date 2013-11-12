@@ -85,7 +85,7 @@ nmap Q :q!<CR>
 cmap W! %!sudo tee > /dev/null %
 " Enter <cr> to :
 nnoremap <cr> :
-" Jump to start & end of line :
+" Jump to start & end of line
 noremap H ^
 noremap L $
 " Split navigation
@@ -94,11 +94,19 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-l> <c-w>l
 " Insert/Visual mode to Command mode
-inoremap ff <Esc>
-vnoremap ff <Esc>
-inoremap FF <Esc>
-vnoremap FF <Esc>
-" Indent with Tab & Shift-Tab
+inoremap vn <esc>
+vnoremap vn <esc>
+inoremap nv <esc>
+vnoremap nv <esc>
+inoremap VN <esc>
+vnoremap VN <esc>
+inoremap NV <esc>
+vnoremap NV <esc>
+nnoremap vn <nop>
+nnoremap nv <nop>
+nnoremap VN <nop>
+nnoremap NV <nop>
+" Indent WIth Tab & Shift-Tab
 nnoremap <tab> >>_
 nnoremap <s-tab> <<_
 inoremap <s-tab> <c-d>
@@ -107,6 +115,16 @@ vnoremap <s-tab> <gv
 " Re-select visual block after indent
 vnoremap < <gv
 vnoremap > >gv
+" Screen navigation (insert mode)
+inoremap <c-f> <c-o><c-f>
+inoremap <c-b> <c-o><c-b>
+" Move current line vertically
+nnoremap <silent> <c-J> :m+<CR>
+nnoremap <silent> <c-K> :m-2<CR>
+inoremap <silent> <c-J> <c-o>:m+<CR>
+inoremap <silent> <c-K> <c-o>:m-2<CR>
+vnoremap <silent> <c-J> :m'>+<CR>gv
+vnoremap <silent> <c-K> :m-2<CR>gv
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Auto Commands
@@ -127,8 +145,8 @@ endif
 " NERDTreeTab
 nmap <silent> <leader>. :NERDTreeTabsToggle<CR>
 " GitGutter
-nmap nv <Plug>GitGutterPrevHunk
-nmap vn <Plug>GitGutterNextHunk
+nmap cm <Plug>GitGutterNextHunk
+nmap mc <Plug>GitGutterPrevHunk
 let g:gitgutter_sign_removed = '--'
 let g:gitgutter_sign_modified_removed = '~-'
 highlight GitGutterDelete guifg=#ff0000 guibg=NONE ctermfg=1 ctermbg=NONE
@@ -136,9 +154,3 @@ highlight GitGutterDelete guifg=#ff0000 guibg=NONE ctermfg=1 ctermbg=NONE
 let g:EasyMotion_leader_key = ';'
 " Neocomplcache
 let g:neocomplcache_enable_at_startup = 1
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => zzz-Overrides
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" .vimrc continued in zzz-Overrides.vim
-" ( Overrides any settings done by 3rd party plugins )

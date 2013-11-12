@@ -57,7 +57,7 @@ cp myplugin.vim ~/.vim/plugin/
 ### Time Saving keyboard mappings
 
 1. Save with **shift+w** (**W**) and Quit with **shift-q** (**Q**)
-2. Press **ff** or **FF** in **insert/visual mode** to change to **Command mode**
+2. Press **vn** or **VN** or **nv** or **NV** in **insert/visual mode** to change to **Command mode**
 3. Press **,/** to exit search highlight after a search with **/**
 4. Press **shift-h** ( **H** ) to jump to line beginning and **shift-l** ( **L** ) to jump to line ending.
 5. Press **F2** in **insert mode** to toggle **paste**
@@ -73,11 +73,9 @@ cp myplugin.vim ~/.vim/plugin/
     * **Ctrl-j** -> Move down
     * **Ctrl-k** -> Move up
     * **Ctrl-l** -> Move right
-8. Move cursor with-in **insert mode** without arrow-keys:
-    * **Ctrl-h** -> Move cursor left
-    * **Ctrl-j** -> Move cursor down
-    * **Ctrl-k** -> Move cursor up
-    * **Ctrl-l** -> Move cursor right
+8. Move **current/selected lines** vertically :
+    * **Ctrl-shift-j** -> Move line/selection down
+    * **Ctrl-shift-k** -> Move line/selection up
 9. **Indent** & **Un-Indent** with **tab** & **shift-tab** respectively
 10. Press **:W!** to save with **sudo** ( Useful for system files )
 11. Press **Enter** to **:** in command mode
