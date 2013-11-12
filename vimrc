@@ -82,23 +82,22 @@ nnoremap td  :tabclose<CR>
 nmap W :w!<CR>
 nmap Q :q!<CR>
 " Sudo save
-cmap w!! %!sudo tee > /dev/null %
+cmap W! %!sudo tee > /dev/null %
 " Enter <cr> to :
 nnoremap <cr> :
+" Jump to start & end of line :
+noremap H ^
+noremap L $
 " Split navigation
 nnoremap <c-h> <c-w>h
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-l> <c-w>l
 " Insert/Visual mode to Command mode
-inoremap fj <Esc>
-vnoremap fj <Esc>
-inoremap jf <Esc>
-vnoremap jf <Esc>
-inoremap FJ <Esc>
-vnoremap FJ <Esc>
-inoremap JF <Esc>
-vnoremap JF <Esc>
+inoremap ff <Esc>
+vnoremap ff <Esc>
+inoremap FF <Esc>
+vnoremap FF <Esc>
 " Indent with Tab & Shift-Tab
 nnoremap <tab> >>_
 nnoremap <s-tab> <<_

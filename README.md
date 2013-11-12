@@ -56,28 +56,30 @@ cp myplugin.vim ~/.vim/plugin/
 ### Time Saving keyboard mappings
 
 1. Save with **shift+w** (**W**) and Quit with **shift-q** (**Q**)
-2. Press **fj** or **FJ** or **jf** or **JF** in **insert/visual mode** to change to **Command mode**
+2. Press **ff** or **FF** in **insert/visual mode** to change to **Command mode**
 3. Press **,/** to exit search highlight after a search with **/**
-4. Press **F2** in **insert mode** to toggle **paste**
-5. Easy **tab navigation** with :
+4. Press **shift-h** ( **H** ) to jump to line beginning and **shift-l** ( **L** ) to jump to line ending.
+5. Press **F2** in **insert mode** to toggle **paste**
+6. Easy **tab navigation** with :
     * **th** -> First tab
     * **tj** -> Next tab
     * **tk** -> Previous tab
     * **tl** -> Last tab
     * **tt** -> New tab
     * **td** -> Close current tab
-6. Easy **split navigation** in **command mode** with :
+7. Easy **split navigation** in **command mode** with :
     * **Ctrl-h** -> Move left
     * **Ctrl-j** -> Move down
     * **Ctrl-k** -> Move up
     * **Ctrl-l** -> Move right
-7. Move cursor with-in **insert mode** without arrow-keys:
+8. Move cursor with-in **insert mode** without arrow-keys:
     * **Ctrl-h** -> Move cursor left
     * **Ctrl-j** -> Move cursor down
     * **Ctrl-k** -> Move cursor up
     * **Ctrl-l** -> Move cursor right
-8. **Indent** & **Un-Indent** with **tab** & **shift-tab** respectively
-9. Press **Enter** to **:** in command mode
+9. **Indent** & **Un-Indent** with **tab** & **shift-tab** respectively
+10. Press **:W!** to save with **sudo** ( Useful for system files )
+11. Press **Enter** to **:** in command mode
 
 ### Misc.
 
