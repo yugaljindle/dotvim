@@ -53,6 +53,8 @@ cp myplugin.vim ~/.vim/plugin/
 7. Automatically closes **parenthesis**, **braces**, **brackets**, **quotes** as you type with [delimitMate](https://github.com/Raimondi/delimitMate.git)
 8. Tab completion of words inside of a search '**/**' with [SearchComplete](http://www.vim.org/scripts/script.php?script_id=474)
 9. Enhanced auto-completion with [neocomplcache](https://github.com/Shougo/neocomplcache.vim.git)
+10. Easily toggle comments with [tcomment](https://github.com/tomtom/tcomment_vim.git)
+    * **ctrl-/ ctrl-/** to toggle current/selected lines
 
 ### Time Saving keyboard mappings
 
