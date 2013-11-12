@@ -127,13 +127,15 @@ endif
 " NERDTreeTab
 nmap <silent> <leader>. :NERDTreeTabsToggle<CR>
 " GitGutter
-nmap gh <Plug>GitGutterNextHunk
-nmap hg <Plug>GitGutterPrevHunk
+nmap nv <Plug>GitGutterPrevHunk
+nmap vn <Plug>GitGutterNextHunk
 let g:gitgutter_sign_removed = '--'
 let g:gitgutter_sign_modified_removed = '~-'
 highlight GitGutterDelete guifg=#ff0000 guibg=NONE ctermfg=1 ctermbg=NONE
 " EasyMotion
 let g:EasyMotion_leader_key = ';'
+" Neocomplcache
+let g:neocomplcache_enable_at_startup = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => zzz-Overrides

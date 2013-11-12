@@ -41,8 +41,8 @@ cp myplugin.vim ~/.vim/plugin/
     * Press **,.** to toggle **NERDTree** explorer across tabs.
 3. Sublime style **multiple cursors** for editing multiple lines at once with [multiple-cursors](https://github.com/terryma/vim-multiple-cursors.git)
 4. **IDE** style **GIT diff** as [gitgutter](https://github.com/airblade/vim-gitgutter.git)
-    * Jump to **next** diff with **gh**
-    * Jump to **prev** diff with **hg**
+    * Jump to **next** diff with **vn**
+    * Jump to **prev** diff with **nv**
 5. **Snippet** completion like **Textmate** with [snipmate](https://github.com/msanders/snipmate.vim)
 6. Fast file **navigation** with [easymotion](https://github.com/Lokaltog/vim-easymotion.git)
     * **;w** anchor to words
@@ -52,6 +52,7 @@ cp myplugin.vim ~/.vim/plugin/
     * **;F** search for character backward
 7. Automatically closes **parenthesis**, **braces**, **brackets**, **quotes** as you type with [delimitMate](https://github.com/Raimondi/delimitMate.git)
 8. Tab completion of words inside of a search '**/**' with [SearchComplete](http://www.vim.org/scripts/script.php?script_id=474)
+9. Enhanced auto-completion with [neocomplcache](https://github.com/Shougo/neocomplcache.vim.git)
 
 ### Time Saving keyboard mappings
 
