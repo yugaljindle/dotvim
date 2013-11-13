@@ -84,7 +84,7 @@ cp myplugin.vim ~/.vim/plugin/
     * **Alt-j** -> Move line/selection down
     * **Alt-k** -> Move line/selection up
 10. **Indent** & **Un-Indent** with **tab** & **shift-tab** respectively
-11. Press **:W!** to save with **sudo** ( Useful for system files )
+11. Press **:w!!** to save with **sudo** ( Useful for system files )
 12. Press **Enter** to **:** in command mode
 13. Press **,y** (**yank** to register) and **,p** (**paste** from register)
 
