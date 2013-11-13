@@ -81,6 +81,7 @@ cp myplugin.vim ~/.vim/plugin/
 9. **Indent** & **Un-Indent** with **tab** & **shift-tab** respectively
 10. Press **:W!** to save with **sudo** ( Useful for system files )
 11. Press **Enter** to **:** in command mode
+12. Press **,y** (**yank** to register) and **,p** (**paste** from register)
 
 ### Misc.
 

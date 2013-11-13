@@ -125,6 +125,9 @@ inoremap <silent> <c-J> <c-o>:m+<CR>
 inoremap <silent> <c-K> <c-o>:m-2<CR>
 vnoremap <silent> <c-J> :m'>+<CR>gv
 vnoremap <silent> <c-K> :m-2<CR>gv
+" Yank to register & paste from register
+noremap <leader>y "zy
+noremap <leader>p "zp
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Auto Commands
