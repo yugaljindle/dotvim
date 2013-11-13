@@ -116,15 +116,19 @@ vnoremap <s-tab> <gv
 vnoremap < <gv
 vnoremap > >gv
 " Screen navigation (insert mode)
+inoremap <c-h> <left>
+inoremap <c-j> <down>
+inoremap <c-k> <up>
+inoremap <c-l> <right>
 inoremap <c-f> <c-o><c-f>
 inoremap <c-b> <c-o><c-b>
-" Move current line vertically
-nnoremap <silent> <c-J> :m+<CR>
-nnoremap <silent> <c-K> :m-2<CR>
-inoremap <silent> <c-J> <c-o>:m+<CR>
-inoremap <silent> <c-K> <c-o>:m-2<CR>
-vnoremap <silent> <c-J> :m'>+<CR>gv
-vnoremap <silent> <c-K> :m-2<CR>gv
+" Move current line vertically (GVim only)
+nnoremap <silent> <m-j> :m+<CR>
+nnoremap <silent> <m-k> :m-2<CR>
+inoremap <silent> <m-j> <c-o>:m+<CR>
+inoremap <silent> <m-k> <c-o>:m-2<CR>
+vnoremap <silent> <m-j> :m'>+<CR>gv
+vnoremap <silent> <m-k> :m-2<CR>gv
 " Yank to register & paste from register
 noremap <leader>y "zy
 noremap <leader>p "zp

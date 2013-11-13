@@ -75,13 +75,18 @@ cp myplugin.vim ~/.vim/plugin/
     * **Ctrl-j** -> Move down
     * **Ctrl-k** -> Move up
     * **Ctrl-l** -> Move right
-8. Move **current/selected lines** vertically :
-    * **Ctrl-shift-j** -> Move line/selection down
-    * **Ctrl-shift-k** -> Move line/selection up
-9. **Indent** & **Un-Indent** with **tab** & **shift-tab** respectively
-10. Press **:W!** to save with **sudo** ( Useful for system files )
-11. Press **Enter** to **:** in command mode
-12. Press **,y** (**yank** to register) and **,p** (**paste** from register)
+8. Move cursor with-in **insert mode** without arrow-keys:
+    * **Ctrl-h** -> Move cursor left
+    * **Ctrl-j** -> Move cursor down
+    * **Ctrl-k** -> Move cursor up
+    * **Ctrl-l** -> Move cursor right
+9. Move **current/selected lines** vertically (**Gvim** Only) :
+    * **Alt-j** -> Move line/selection down
+    * **Alt-k** -> Move line/selection up
+10. **Indent** & **Un-Indent** with **tab** & **shift-tab** respectively
+11. Press **:W!** to save with **sudo** ( Useful for system files )
+12. Press **Enter** to **:** in command mode
+13. Press **,y** (**yank** to register) and **,p** (**paste** from register)
 
 ### Misc.
 
