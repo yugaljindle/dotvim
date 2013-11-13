@@ -82,7 +82,7 @@ nnoremap td  :tabclose<CR>
 nmap W :w!<CR>
 nmap Q :q!<CR>
 " Sudo save
-cmap W! %!sudo tee > /dev/null %
+cmap w!! %!sudo tee > /dev/null %
 " Enter <cr> to :
 nnoremap <cr> :
 " Jump to start & end of line
