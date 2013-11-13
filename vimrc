@@ -94,18 +94,14 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-l> <c-w>l
 " Insert/Visual mode to Command mode
-inoremap vn <esc>
-vnoremap vn <esc>
-inoremap nv <esc>
-vnoremap nv <esc>
-inoremap VN <esc>
-vnoremap VN <esc>
-inoremap NV <esc>
-vnoremap NV <esc>
-nnoremap vn <nop>
-nnoremap nv <nop>
-nnoremap VN <nop>
-nnoremap NV <nop>
+inoremap i <esc>
+vnoremap i <esc>
+inoremap I <esc>
+vnoremap I <esc>
+inoremap <m-i> <esc>
+vnoremap <m-i> <esc>
+inoremap <m-I> <esc>
+vnoremap <m-I> <esc>
 " Indent WIth Tab & Shift-Tab
 nnoremap <tab> >>_
 nnoremap <s-tab> <<_

@@ -59,7 +59,7 @@ cp myplugin.vim ~/.vim/plugin/
 ### Time Saving keyboard mappings
 
 1. Save with **shift+w** (**W**) and Quit with **shift-q** (**Q**)
-2. Press **vn** or **VN** or **nv** or **NV** in **insert/visual mode** to change to **Command mode**
+2. Press **alt-i** or **alt-I** **insert/visual mode** to change to **Command mode**
 3. Press **,/** to exit search highlight after a search with **/**
 4. Press **shift-h** ( **H** ) to jump to line beginning and **shift-l** ( **L** ) to jump to line ending.
 5. Press **F2** in **insert mode** to toggle **paste**
