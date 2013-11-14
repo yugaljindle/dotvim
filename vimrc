@@ -48,8 +48,7 @@ set laststatus=2
 set number
 set autoread
 set cursorline
-set pastetoggle=<F2>
-set clipboard=unnamedplus
+set pastetoggle=<f2>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Centralize backups, swapfiles and undo history
@@ -81,6 +80,8 @@ nnoremap td  :tabclose<CR>
 " Save & Quit
 nmap W :w!<CR>
 nmap Q :q!<CR>
+noremap <c-s> :w!<CR>
+inoremap <c-s> :w!<CR>
 " Sudo save
 cmap w!! %!sudo tee > /dev/null %
 " Enter <cr> to :
@@ -126,10 +127,10 @@ inoremap <silent> <m-k> <c-o>:m-2<CR>
 vnoremap <silent> <m-j> :m'>+<CR>gv
 vnoremap <silent> <m-k> :m-2<CR>gv
 " Standard ctrl-c and ctrl-v functionality
-vmap <c-c> "zy
-vmap <c-x> "zc
-vmap <c-v> c<esc>"zp
-imap <c-v> <c-r><c-o>z
+vmap <c-c> "+y
+vmap <c-x> "+c
+vmap <c-v> c<esc>"+p
+imap <c-v> <f2><c-r>+<f2>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Auto Commands
