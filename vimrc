@@ -12,7 +12,7 @@ execute pathogen#infect()
 " => Color Scheme
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 set t_Co=256
-colorscheme railscasts
+colorscheme jellybeans
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Customizations
@@ -125,9 +125,11 @@ inoremap <silent> <m-j> <c-o>:m+<CR>
 inoremap <silent> <m-k> <c-o>:m-2<CR>
 vnoremap <silent> <m-j> :m'>+<CR>gv
 vnoremap <silent> <m-k> :m-2<CR>gv
-" Yank to register & paste from register
-noremap <leader>y "zy
-noremap <leader>p "zp
+" Standard ctrl-c and ctrl-v functionality
+vmap <c-c> "zy
+vmap <c-x> "zc
+vmap <c-v> c<esc>"zp
+imap <c-v> <c-r><c-o>z
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Auto Commands

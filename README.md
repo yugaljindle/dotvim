@@ -54,7 +54,7 @@ cp myplugin.vim ~/.vim/plugin/
 8. Tab completion of words inside of a search '**/**' with [SearchComplete](http://www.vim.org/scripts/script.php?script_id=474)
 9. Enhanced auto-completion with [neocomplcache](https://github.com/Shougo/neocomplcache.vim.git)
 10. Easily toggle comments with [tcomment](https://github.com/tomtom/tcomment_vim.git)
-    * **ctrl-/ ctrl-/** to toggle current/selected lines
+11. Automatically switch working directory to **VCS** root with [rooter](https://github.com/airblade/vim-rooter)
 
 ### Time Saving keyboard mappings
 
@@ -86,7 +86,7 @@ cp myplugin.vim ~/.vim/plugin/
 10. **Indent** & **Un-Indent** with **tab** & **shift-tab** respectively
 11. Press **:w!!** to save with **sudo** ( Useful for system files )
 12. Press **Enter** to **:** in command mode
-13. Press **,y** (**yank** to register) and **,p** (**paste** from register)
+13. **Copy/Cut** selected text with **ctrl-c/ctrl-x** respectively and paste with **ctrl-v** in **insert mode**.
 
 ### Misc.
 
