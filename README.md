@@ -57,6 +57,7 @@ cp myplugin.vim ~/.vim/plugin/
     * **Alt-/** to comment/uncomment lines ( **Gvim** only )
     * **gc** to comment/uncomment lines ( Both **vim** & **Gvim** )
 11. Automatically switch working directory to **VCS** root with [rooter](https://github.com/airblade/vim-rooter)
+12. Better **markdown** support with [markdown](https://github.com/plasticboy/vim-markdown)
 
 ### Time Saving keyboard mappings
 
@@ -90,6 +91,11 @@ cp myplugin.vim ~/.vim/plugin/
 12. Press **:w!!** to save with **sudo** ( Useful for system files )
 13. Press **Enter** to **:** in command mode
 14. **Copy/Cut** selected text with **ctrl-c/x** respectively and **paste** with **ctrl-v** in **insert mode**. ( Separate clipboards for **copy/cut** with **ctrl-c/x** & **y/d** )
+15. **Open**/**Close** folds:
+    * **-** to close fold
+    * **=** to open fold
+    * **_** to close all folds
+    * **+** to open all folds
 
 ### Misc.
 

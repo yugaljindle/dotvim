@@ -146,6 +146,11 @@ imap <c-v> <f2><c-r>+<f2>
 " Map <Space> to /(search) and Ctrl-<Space> to ?(search backwards)
 map <space> /
 map <c-space> ?
+" Toggle Folding
+noremap - zc " Close fold
+noremap = zo " Open fold
+noremap _ zM " Close all folds
+noremap + zR " Open all folds
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Auto Commands
