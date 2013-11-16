@@ -54,6 +54,8 @@ cp myplugin.vim ~/.vim/plugin/
 8. Tab completion of words inside of a search '**/**' with [SearchComplete](http://www.vim.org/scripts/script.php?script_id=474)
 9. Enhanced auto-completion with [neocomplcache](https://github.com/Shougo/neocomplcache.vim.git)
 10. Easily toggle comments with [tcomment](https://github.com/tomtom/tcomment_vim.git)
+    * **Alt-/** to comment/uncomment lines ( **Gvim** only )
+    * **gc** to comment/uncomment lines ( Both **vim** & **Gvim** )
 11. Automatically switch working directory to **VCS** root with [rooter](https://github.com/airblade/vim-rooter)
 
 ### Time Saving keyboard mappings
@@ -61,32 +63,33 @@ cp myplugin.vim ~/.vim/plugin/
 1. Save with **shift+w** (**W**) and Quit with **shift-q** (**Q**). Additionally, save with **ctrl-s** as well when using Gvim.
 2. Press **alt-i** or **alt-I** **insert/visual mode** to change to **Command mode**
 3. Press **,/** to exit search highlight after a search with **/**
-4. Press **shift-h** ( **H** ) to jump to line beginning and **shift-l** ( **L** ) to jump to line ending.
-5. Press **F2** in **insert mode** to toggle **paste**
-6. Easy **tab navigation** with :
+4. Press **space** or **ctrl-space** in **normal/visual** and start searching **forward**/**backwards** respectively.
+5. Press **shift-h** ( **H** ) to jump to line beginning and **shift-l** ( **L** ) to jump to line ending.
+6. Press **F2** in **insert mode** to toggle **paste**
+7. Easy **tab navigation** with :
     * **th** -> First tab
     * **tj** -> Next tab
     * **tk** -> Previous tab
     * **tl** -> Last tab
     * **tt** -> New tab
     * **td** -> Close current tab
-7. Easy **split navigation** in **command mode** with :
+8. Easy **split navigation** in **command mode** with :
     * **Ctrl-h** -> Move left
     * **Ctrl-j** -> Move down
     * **Ctrl-k** -> Move up
     * **Ctrl-l** -> Move right
-8. Move cursor with-in **insert mode** without arrow-keys:
+9. Move cursor with-in **insert mode** without arrow-keys:
     * **Ctrl-h** -> Move cursor left
     * **Ctrl-j** -> Move cursor down
     * **Ctrl-k** -> Move cursor up
     * **Ctrl-l** -> Move cursor right
-9. Move **current/selected lines** vertically (**Gvim** Only) :
+10. Move **current/selected lines** vertically (**Gvim** Only) :
     * **Alt-j** -> Move line/selection down
     * **Alt-k** -> Move line/selection up
-10. **Indent** & **Un-Indent** with **tab** & **shift-tab** respectively
-11. Press **:w!!** to save with **sudo** ( Useful for system files )
-12. Press **Enter** to **:** in command mode
-13. **Copy/Cut** selected text with **ctrl-c/ctrl-x** respectively and paste with **ctrl-v** in **insert mode**.
+11. **Indent** & **Un-Indent** with **tab** & **shift-tab** respectively
+12. Press **:w!!** to save with **sudo** ( Useful for system files )
+13. Press **Enter** to **:** in command mode
+14. **Copy/Cut** selected text with **ctrl-c/x** respectively and **paste** with **ctrl-v** in **insert mode**. ( Separate clipboards for **copy/cut** with **ctrl-c/x** & **y/d** )
 
 ### Misc.
 
