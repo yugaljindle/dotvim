@@ -6,9 +6,11 @@ Just enough **vim customizations** to enable **IDE style** or even better **prod
 ### Installation
 
 ```
-# Backup '.vim' and '.vimrc' if already present
+# Backup '.vim' (If any)
 mv ~/.vim ~/.vim_bak
-mv ~/.vimrc ~/.vimrc_bak
+
+# Custom overrides with ~/.vimrc.local (If any)
+mv ~/.vimrc ~/.vimrc.local
 
 # Create new '.vim'
 cd ~
@@ -58,6 +60,8 @@ cp myplugin.vim ~/.vim/plugin/
     * **gc** to comment/uncomment lines ( Both **vim** & **Gvim** )
 11. Automatically switch working directory to **VCS** root with [rooter](https://github.com/airblade/vim-rooter)
 12. Better **markdown** support with [markdown](https://github.com/plasticboy/vim-markdown)
+13. Visible **indents** with [indentLine](https://github.com/Yggdroot/indentLine)
+14. More expressive tabs bar with [taboo](https://github.com/gcmt/taboo.vim)
 
 ### Time Saving keyboard mappings
 
@@ -74,6 +78,15 @@ cp myplugin.vim ~/.vim/plugin/
     * **tl** -> Last tab
     * **tt** -> New tab
     * **td** -> Close current tab
+    * **t1** -> Move to tab 1
+    * **t2** -> Move to tab 2
+    * **t3** -> Move to tab 3
+    * **t4** -> Move to tab 4
+    * **t5** -> Move to tab 5
+    * **t6** -> Move to tab 6
+    * **t7** -> Move to tab 7
+    * **t8** -> Move to tab 8
+    * **t9** -> Move to tab 9
 8. Easy **split navigation** in **command mode** with :
     * **Ctrl-h** -> Move left
     * **Ctrl-j** -> Move down

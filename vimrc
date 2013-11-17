@@ -74,26 +74,35 @@ set undodir=~/.vim/undo
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let mapleader = ","
 " Stop hls
-nmap <silent> <leader>/ :nohlsearch<CR>
+nmap <silent> <leader>/ :nohlsearch<cr>
 " Quickly edit/reload the vimrc file
-nmap <leader>ev :tabnew $MYVIMRC<CR>
-nmap <leader>sv :so $MYVIMRC<CR>
+nmap <leader>ev :tabnew $MYVIMRC<cr>
+nmap <leader>sv :so $MYVIMRC<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Key bindings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Tab switch 
-nnoremap th  :tabfirst<CR>
-nnoremap tj  :tabnext<CR>
-nnoremap tk  :tabprev<CR>
-nnoremap tl  :tablast<CR>
-nnoremap tt  :tabedit<Space>
-nnoremap td  :tabclose<CR>
+nnoremap th :tabfirst<cr>
+nnoremap tj :tabnext<cr>
+nnoremap tk :tabprev<cr>
+nnoremap tl :tablast<cr>
+nnoremap tt :tabedit<space>
+nnoremap td :tabclose<cr>
+nnoremap t1 :tabn 1<cr>
+nnoremap t2 :tabn 2<cr>
+nnoremap t3 :tabn 3<cr>
+nnoremap t4 :tabn 4<cr>
+nnoremap t5 :tabn 5<cr>
+nnoremap t6 :tabn 6<cr>
+nnoremap t7 :tabn 7<cr>
+nnoremap t8 :tabn 8<cr>
+nnoremap t9 :tabn 9<cr>
 " Save & Quit
-nmap W :w!<CR>
-nmap Q :q!<CR>
-noremap <c-s> :w!<CR>
-inoremap <c-s> :w!<CR>
+nmap W :w<cr>
+nmap Q :q<cr>
+noremap <c-s> :w!<cr>
+inoremap <c-s> <c-o>:w!<cr>
 " Sudo save
 cmap w!! %!sudo tee > /dev/null %
 " Enter <cr> to :
@@ -132,12 +141,12 @@ inoremap <c-l> <right>
 inoremap <c-f> <c-o><c-f>
 inoremap <c-b> <c-o><c-b>
 " Move current line vertically (GVim only)
-nnoremap <silent> <m-j> :m+<CR>
-nnoremap <silent> <m-k> :m-2<CR>
-inoremap <silent> <m-j> <c-o>:m+<CR>
-inoremap <silent> <m-k> <c-o>:m-2<CR>
-vnoremap <silent> <m-j> :m'>+<CR>gv
-vnoremap <silent> <m-k> :m-2<CR>gv
+nnoremap <silent> <m-j> :m+<cr>
+nnoremap <silent> <m-k> :m-2<cr>
+inoremap <silent> <m-j> <c-o>:m+<cr>
+inoremap <silent> <m-k> <c-o>:m-2<cr>
+vnoremap <silent> <m-j> :m'>+<cr>gv
+vnoremap <silent> <m-k> :m-2<cr>gv
 " Standard ctrl-c and ctrl-v functionality
 vmap <c-c> "+y
 vmap <c-x> "+c
@@ -169,7 +178,7 @@ endif
 " => Plugin Customizations
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NERDTreeTab
-nmap <silent> <leader>. :NERDTreeTabsToggle<CR>
+nmap <silent> <leader>. :NERDTreeTabsToggle<cr>
 " GitGutter
 nmap cm <Plug>GitGutterNextHunk
 nmap mc <Plug>GitGutterPrevHunk
@@ -188,3 +197,8 @@ let g:neocomplcache_enable_at_startup = 1
 let g:ctrlp_max_files=0
 let g:ctrlp_max_depth=50
 let g:ctrlp_working_path_mode = ''
+" IndentLine
+let g:indentLine_color_term=239
+" Taboo
+let g:taboo_tab_format=' [%N]:%f%m'
+let g:taboo_renamed_tab_format=' [%N]:[%f]%m'
