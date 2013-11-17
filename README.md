@@ -6,10 +6,10 @@ Just enough **vim customizations** to enable **IDE style** or even better **prod
 ### Installation
 
 ```
-# Backup '.vim' (If any)
+# Backup '.vim' (if any)
 mv ~/.vim ~/.vim_bak
 
-# Custom overrides with ~/.vimrc.local (If any)
+# Keep your custom overrides (if any) with ~/.vimrc.local
 mv ~/.vimrc ~/.vimrc.local
 
 # Create new '.vim'
