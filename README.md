@@ -9,8 +9,11 @@ Just enough **vim customizations** to enable **IDE style** or even better **prod
 # Backup '.vim' (if any)
 mv ~/.vim ~/.vim_bak
 
-# Keep your custom overrides (if any) with ~/.vimrc.local
+# Move ~/.vimrc (if any) to ~/.vimrc.local
 mv ~/.vimrc ~/.vimrc.local
+
+# Move ~/.gvimrc (if any) to ~/.gvimrc.local
+mv ~/.gvimrc ~/.gvimrc.local
 
 # Create new '.vim'
 cd ~
@@ -41,6 +44,7 @@ cp myplugin.vim ~/.vim/plugin/
 1. Sublime style **ctrl-p** project-wide **fuzzy file search** with [ctrlp](https://github.com/kien/ctrlp.vim.git)
 2. **IDE** style file tree with [NERDTree](https://github.com/scrooloose/nerdtree.git) and [NERDTree Tabs](https://github.com/jistr/vim-nerdtree-tabs.git) to explore files in the project
     * Press **,.** to toggle **NERDTree** explorer across tabs.
+    * Open files in new tabs with **Ctrl-t** ( To match with **ctrlp** behavior )
 3. Sublime style **multiple cursors** for editing multiple lines at once with [multiple-cursors](https://github.com/terryma/vim-multiple-cursors.git)
 4. **IDE** style **GIT diff** as [gitgutter](https://github.com/airblade/vim-gitgutter.git)
     * Jump to **next** diff with **vn**

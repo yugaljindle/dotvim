@@ -11,20 +11,12 @@
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Disable vi fallback
+" => Initialize
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Disable vi fallback
 set nocompatible
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Pathogen
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Initiate Pathogen
 execute pathogen#infect()
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Color Scheme
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set t_Co=256
-colorscheme jellybeans
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Customizations
@@ -61,6 +53,12 @@ set number
 set autoread
 set cursorline
 set pastetoggle=<f2>
+" Capable terminals only
+if &term=="xterm" || &term=="builtin_gui" || &term == "win32" || has("gui_running")
+    set ttyfast
+    set t_Co=256
+    colorscheme jellybeans
+endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Centralize backups, swapfiles and undo history
@@ -179,6 +177,7 @@ endif
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NERDTreeTab
 nmap <silent> <leader>. :NERDTreeTabsToggle<cr>
+let NERDTreeMapOpenInTab='<c-t>'
 " GitGutter
 nmap cm <Plug>GitGutterNextHunk
 nmap mc <Plug>GitGutterPrevHunk
