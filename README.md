@@ -23,8 +23,9 @@ git clone https://github.com/yugal/dotvim.git .
 git submodule init
 git submodule update
 
-# Add symlink
+# Add symlinks
 ln -s ~/.vim/vimrc ~/.vimrc
+ln -s ~/.vim/gvimrc ~/.gvimrc
 ```
 
 ### Adding new packages/plugins ([Pathogen](https://github.com/tpope/vim-pathogen) style)
