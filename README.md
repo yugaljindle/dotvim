@@ -102,19 +102,24 @@ cp myplugin.vim ~/.vim/plugin/
     * **Ctrl-j** -> Move down
     * **Ctrl-k** -> Move up
     * **Ctrl-l** -> Move right
-9. Move cursor with-in **insert mode** without arrow-keys:
+9. Move **split windows** around (**horizontal/vertical**) :
+    * **,h** -> Move split left
+    * **,j** -> Move split down
+    * **,k** -> Move split up
+    * **,l** -> Move split right
+10. Move cursor with-in **insert mode** without arrow-keys:
     * **Ctrl-h** -> Move cursor left
     * **Ctrl-j** -> Move cursor down
     * **Ctrl-k** -> Move cursor up
     * **Ctrl-l** -> Move cursor right
-10. Move **current/selected lines** vertically (**Gvim** Only) :
+11. Move **current/selected lines** vertically (**Gvim** Only) :
     * **Alt-j** -> Move line/selection down
     * **Alt-k** -> Move line/selection up
-11. **Indent** & **Un-Indent** with **tab** & **shift-tab** respectively
-12. Press **:w!!** to save with **sudo** ( Useful for system files )
-13. Press **Enter** to **:** in command mode
-14. **Copy/Cut** selected text with **ctrl-c/x** respectively and **paste** with **ctrl-v** in **insert mode**. ( Separate clipboards for **copy/cut** with **ctrl-c/x** & **y/d** )
-15. **Open**/**Close** folds:
+12. **Indent** & **Un-Indent** with **tab** & **shift-tab** respectively
+13. Press **:w!!** to save with **sudo** ( Useful for system files )
+14. Press **Enter** to **:** in command mode
+15. **Copy/Cut** selected text with **ctrl-c/x** respectively and **paste** with **ctrl-v** in **insert mode**. ( Separate clipboards for **copy/cut** with **ctrl-c/x** & **y/d** )
+16. **Open**/**Close** folds:
     * **-** to close fold
     * **=** to open fold
     * **_** to close all folds

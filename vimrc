@@ -77,6 +77,15 @@ nmap <silent> <leader>/ :nohlsearch<cr>
 " Quickly edit/reload the vimrc file
 nmap <leader>ev :tabnew $MYVIMRC<cr>
 nmap <leader>sv :so $MYVIMRC<cr>
+" Moving split windows
+noremap <leader>h <c-w>H
+inoremap <leader>h <c-o><c-w>H
+noremap <leader>j <c-w>J
+inoremap <leader>j <c-o><c-w>J
+noremap <leader>k <c-w>K
+inoremap <leader>k <c-o><c-w>K
+noremap <leader>l <c-w>L
+inoremap <leader>l <c-o><c-w>L
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Key bindings
