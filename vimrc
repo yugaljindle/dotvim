@@ -17,6 +17,7 @@
 set nocompatible
 " Initiate Pathogen
 execute pathogen#infect()
+execute pathogen#helptags()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Customizations
@@ -195,9 +196,11 @@ let g:neocomplcache_enable_at_startup = 1
 " CtrlP
 let g:ctrlp_max_files=0
 let g:ctrlp_max_depth=50
-let g:ctrlp_working_path_mode = ''
+let g:ctrlp_working_path_mode=''
 " IndentLine
 let g:indentLine_color_term=239
 " Taboo
 let g:taboo_tab_format=' [%N]:%f%m'
 let g:taboo_renamed_tab_format=' [%N]:[%f]%m'
+" Maximizer
+let g:maximizer_default_mapping_key='<F11>'

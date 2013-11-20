@@ -20,19 +20,22 @@ cd ~
 mkdir .vim
 cd .vim
 git clone https://github.com/yugal/dotvim.git .
-git submodule init
-git submodule update
+git submodule update --init
 
 # Add symlinks
 ln -s ~/.vim/vimrc ~/.vimrc
 ln -s ~/.vim/gvimrc ~/.gvimrc
 ```
 
-### Adding new packages/plugins ([Pathogen](https://github.com/tpope/vim-pathogen) style)
+### Adding/Updating bundles/plugins ([Pathogen](https://github.com/tpope/vim-pathogen) style)
 ```
-# Vim will auto detect packages available inside the bundle directory
+# Adding a new bundle ( Pathogen will auto-detect )
 cd ~/.vim
 git submodule add https://xyz.com/path/to/git/repository.git bundle/package-name
+
+# Updating existing bundles
+cd ~/.vim
+git submodule foreach git pull origin master
 
 # Vim will auto detect vim-scripts available inside the plugin directory
 cp myplugin.vim ~/.vim/plugin/
@@ -67,6 +70,8 @@ cp myplugin.vim ~/.vim/plugin/
 12. Better **markdown** support with [markdown](https://github.com/plasticboy/vim-markdown)
 13. Visible **indents** with [indentLine](https://github.com/Yggdroot/indentLine)
 14. More expressive tabs bar with [taboo](https://github.com/gcmt/taboo.vim)
+15. Toggle **Maximize/Restore** your vim **split windows** without loosing original splits with [maximizer](https://github.com/szw/vim-maximizer.git)
+    * **F11** to toggle **maximize/restore** the current vim split
 
 ### Time Saving keyboard mappings
 
