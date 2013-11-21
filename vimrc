@@ -187,7 +187,12 @@ endif
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NERDTreeTab
 nmap <silent> <leader>. :NERDTreeTabsToggle<cr>
+let NERDTreeHijackNetrw=0
 let NERDTreeMapOpenInTab='<c-t>'
+let g:nerdtree_tabs_open_on_gui_startup=0
+let g:nerdtree_tabs_open_on_console_startup=0
+" Startify
+let g:startify_change_to_dir=0
 " GitGutter
 nmap cm <Plug>GitGutterNextHunk
 nmap mc <Plug>GitGutterPrevHunk

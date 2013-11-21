@@ -72,6 +72,7 @@ cp myplugin.vim ~/.vim/plugin/
 14. More expressive tabs bar with [taboo](https://github.com/gcmt/taboo.vim)
 15. Toggle **Maximize/Restore** your vim **split windows** without loosing original splits with [maximizer](https://github.com/szw/vim-maximizer.git)
     * **F11** to toggle **maximize/restore** the current vim split
+16. **Dashboard** with recently used files with [startify](https://github.com/mhinz/vim-startify.git)
 
 ### Time Saving keyboard mappings
 
