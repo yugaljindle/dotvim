@@ -125,6 +125,7 @@ cp myplugin.vim ~/.vim/plugin/
     * **=** to open fold
     * **_** to close all folds
     * **+** to open all folds
+17. **Revert** current buffer to **last saved state** with **!**
 
 ### Misc.
 

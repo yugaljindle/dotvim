@@ -168,6 +168,8 @@ noremap - zc " Close fold
 noremap = zo " Open fold
 noremap _ zM " Close all folds
 noremap + zR " Open all folds
+" Revert to last saved state
+noremap <silent>! :edit!<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Auto Commands
