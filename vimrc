@@ -79,13 +79,9 @@ nmap <leader>ev :tabnew $MYVIMRC<cr>
 nmap <leader>sv :so $MYVIMRC<cr>
 " Moving split windows
 noremap <leader>h <c-w>H
-inoremap <leader>h <c-o><c-w>H
 noremap <leader>j <c-w>J
-inoremap <leader>j <c-o><c-w>J
 noremap <leader>k <c-w>K
-inoremap <leader>k <c-o><c-w>K
 noremap <leader>l <c-w>L
-inoremap <leader>l <c-o><c-w>L
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Key bindings
@@ -215,6 +211,7 @@ let g:ctrlp_max_depth=50
 let g:ctrlp_working_path_mode=''
 " IndentLine
 let g:indentLine_color_term=239
+let g:indentLine_faster=1
 " Taboo
 let g:taboo_tab_format=' [%N]:%f%m'
 let g:taboo_renamed_tab_format=' [%N]:[%f]%m'
