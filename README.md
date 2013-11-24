@@ -1,9 +1,9 @@
 # .vim
 
-### Description
+## Description
 Just enough **vim customizations** to enable **IDE style** or even better **productive workflow** in vim.
 
-### Installation
+## Installation
 
 ```
 # Backup '.vim' (if any)
@@ -41,7 +41,7 @@ git submodule foreach git pull origin master
 cp myplugin.vim ~/.vim/plugin/
 ```
 
-# Feature Highlights:
+## Feature Highlights:
 
 ### Productive Workflow with :
 
@@ -108,15 +108,16 @@ cp myplugin.vim ~/.vim/plugin/
     * **,j** -> Move split down
     * **,k** -> Move split up
     * **,l** -> Move split right
-10. Move cursor with-in **insert mode** without arrow-keys:
+10. Move cursor with-in **insert mode** without arrow-keys: (**normal mode**)
     * **Ctrl-h** -> Move cursor left
     * **Ctrl-j** -> Move cursor down
     * **Ctrl-k** -> Move cursor up
     * **Ctrl-l** -> Move cursor right
+    * **tab** -> Cycle through windows
 11. Move **current/selected lines** vertically (**Gvim** Only) :
     * **Alt-j** -> Move line/selection down
     * **Alt-k** -> Move line/selection up
-12. **Indent** & **Un-Indent** with **tab** & **shift-tab** respectively
+12. **Indent** & **Un-Indent** with **tab** & **shift-tab** respectively (**visual mode**)
 13. Press **:w!!** to save with **sudo** ( Useful for system files )
 14. Press **Enter** to **:** in command mode
 15. **Copy/Cut** selected text with **ctrl-c/x** respectively and **paste** with **ctrl-v** in **insert mode**. ( Separate clipboards for **copy/cut** with **ctrl-c/x** & **y/d** )
@@ -131,9 +132,14 @@ cp myplugin.vim ~/.vim/plugin/
 
 * Syntax highlighting for **nginx** configuration ( missing in the standard vim install )
 
-# Author
+## Author
 | [![twitter/yugal1988](https://www.gravatar.com/avatar/19c28676f977300166c0f35f41a9aae0?s=90)](http://twitter.com/yugal1988 "Follow @yugal1988 on Twitter") |
 |---|
 | [Yugal Jindle](http://stackoverflow.com/users/731963/yugal-jindle "Stackoverflow !") |
 | [![linkedin.com/in/yugal1988](http://s.c.lnkd.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png) Profile](http://www.linkedin.com/in/yugal1988 "Connect on LinkedIn") |
+
+## License
+
+Copyright (c) Tim Pope.  Distributed under the same terms as Vim itself.
+See `:help license`.
 

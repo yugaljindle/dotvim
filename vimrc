@@ -55,7 +55,8 @@ set autoread
 set cursorline
 set pastetoggle=<f2>
 " Capable terminals only
-if &term=="xterm" || &term=="builtin_gui" || &term == "win32" || has("gui_running")
+if &term=~"xterm" || &term=~"screen" || has("gui_running")
+    set mouse=a
     set ttyfast
     set t_Co=256
     colorscheme jellybeans
@@ -119,19 +120,17 @@ nnoremap <c-h> <c-w>h
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-l> <c-w>l
-" Insert/Visual mode to Command mode
+nnoremap <tab> <c-w>w
+" Shortcut to <esc>
 inoremap i <esc>
-vnoremap i <esc>
+noremap  i <esc>
 inoremap I <esc>
-vnoremap I <esc>
+noremap  I <esc>
 inoremap <m-i> <esc>
-vnoremap <m-i> <esc>
+noremap  <m-i> <esc>
 inoremap <m-I> <esc>
-vnoremap <m-I> <esc>
-" Indent WIth Tab & Shift-Tab
-nnoremap <tab> >>_
-nnoremap <s-tab> <<_
-inoremap <s-tab> <c-d>
+noremap  <m-I> <esc>
+" Indent with Tab & Shift-Tab
 vnoremap <tab> >gv
 vnoremap <s-tab> <gv
 " Re-select visual block after indent
@@ -172,6 +171,8 @@ noremap <silent>! :edit!<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set nopaste on leaving insert mode
 autocmd InsertLeave * set nopaste
+" Resize Vsplits on window resize
+au VimResized * exe "normal! \<c-w>="
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Source '~/.vimrc.local' for local customizations
@@ -185,12 +186,12 @@ endif
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NERDTreeTab
 nmap <silent> <leader>. :NERDTreeTabsToggle<cr>
-let NERDTreeHijackNetrw=0
 let NERDTreeMapOpenInTab='<c-t>'
 let g:nerdtree_tabs_open_on_gui_startup=0
 let g:nerdtree_tabs_open_on_console_startup=0
 " Startify
 let g:startify_change_to_dir=0
+au FileType startify setlocal buftype=
 " GitGutter
 nmap cm <Plug>GitGutterNextHunk
 nmap mc <Plug>GitGutterPrevHunk
@@ -208,6 +209,7 @@ let g:neocomplcache_enable_at_startup = 1
 " CtrlP
 let g:ctrlp_max_files=0
 let g:ctrlp_max_depth=50
+let g:ctrlp_by_filename=1
 let g:ctrlp_working_path_mode=''
 " IndentLine
 let g:indentLine_color_term=239
