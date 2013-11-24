@@ -124,12 +124,16 @@ nnoremap <tab> <c-w>w
 " Shortcut to <esc>
 inoremap i <esc>
 noremap  i <esc>
+snoremap i <esc>
 inoremap I <esc>
 noremap  I <esc>
+snoremap I <esc>
 inoremap <m-i> <esc>
 noremap  <m-i> <esc>
+snoremap <m-i> <esc>
 inoremap <m-I> <esc>
 noremap  <m-I> <esc>
+snoremap <m-I> <esc>
 " Indent with Tab & Shift-Tab
 vnoremap <tab> >gv
 vnoremap <s-tab> <gv
