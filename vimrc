@@ -53,6 +53,7 @@ set laststatus=2
 set number
 set autoread
 set cursorline
+set noswapfile
 set pastetoggle=<f2>
 " Capable terminals only
 if &term=~"xterm" || &term=~"screen" || has("gui_running")
@@ -61,13 +62,6 @@ if &term=~"xterm" || &term=~"screen" || has("gui_running")
     set t_Co=256
     colorscheme jellybeans
 endif
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Centralize backups, swapfiles and undo history
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set backupdir=~/.vim/backups
-set directory=~/.vim/swaps
-set undodir=~/.vim/undo
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Leader bindings

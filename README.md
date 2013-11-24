@@ -6,38 +6,38 @@ Just enough **vim customizations** to enable **IDE style** or even better **prod
 ## Installation
 
 ```
-# Backup '.vim' (if any)
+### Backup '.vim' (if any)
 mv ~/.vim ~/.vim_bak
 
-# Move ~/.vimrc (if any) to ~/.vimrc.local
+### Move ~/.vimrc (if any) to ~/.vimrc.local
 mv ~/.vimrc ~/.vimrc.local
 
-# Move ~/.gvimrc (if any) to ~/.gvimrc.local
+### Move ~/.gvimrc (if any) to ~/.gvimrc.local
 mv ~/.gvimrc ~/.gvimrc.local
 
-# Create new '.vim'
+### Create new '.vim'
 cd ~
 mkdir .vim
 cd .vim
 git clone https://github.com/yugal/dotvim.git .
 git submodule update --init
 
-# Add symlinks
+### Add symlinks
 ln -s ~/.vim/vimrc ~/.vimrc
 ln -s ~/.vim/gvimrc ~/.gvimrc
 ```
 
-### Adding/Updating bundles/plugins ([Pathogen](https://github.com/tpope/vim-pathogen) style)
+## Adding/Updating bundles/plugins ([Pathogen](https://github.com/tpope/vim-pathogen) style)
 ```
-# Adding a new bundle ( Pathogen will auto-detect )
+### Adding a new bundle ( Pathogen will auto-detect )
 cd ~/.vim
 git submodule add https://xyz.com/path/to/git/repository.git bundle/package-name
 
-# Updating existing bundles
+### Updating existing bundles
 cd ~/.vim
 git submodule foreach git pull origin master
 
-# Vim will auto detect vim-scripts available inside the plugin directory
+### Vim will auto detect vim-scripts available inside the plugin directory
 cp myplugin.vim ~/.vim/plugin/
 ```
 
@@ -140,6 +140,4 @@ cp myplugin.vim ~/.vim/plugin/
 
 ## License
 
-Copyright (c) Yugal Jindle.  Distributed under the same terms as Vim itself.
-See `:help license`.
-
+Copyright (c) **Yugal Jindle**.  Distributed under the same terms as Vim itself. See `:help license`.
