@@ -62,7 +62,7 @@ cp myplugin.vim ~/.vim/plugin/
 4. **IDE** style **GIT diff** as [gitgutter](https://github.com/airblade/vim-gitgutter.git)
     * Jump to **next** diff with **vn**
     * Jump to **prev** diff with **nv**
-5. **Snippet** completion like **Textmate** with [snipmate](https://github.com/msanders/snipmate.vim)
+5. **Snippet** completion like **Textmate** with [snipmate](https://github.com/garbas/vim-snipmate) and [snippets](https://github.com/honza/vim-snippets)
 6. Fast file **navigation** with [easymotion](https://github.com/Lokaltog/vim-easymotion.git)
     * **;w** anchor to words
     * **;j** anchor to lines forward
