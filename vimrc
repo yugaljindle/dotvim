@@ -1,6 +1,12 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Maintainer: 
-"       Yugal Jindle
+"        _       _         _           
+"     __| | ___ | |___   _(_)_ __ ___  
+"    / _` |/ _ \| __\ \ / / | '_ ` _ \ 
+"   | (_| | (_) | |_ \ V /| | | | | | |
+"    \__,_|\___/ \__| \_/ |_|_| |_| |_|
+"                                      
+"   
+" By Yugal Jindle:
 "       Twitter: @yugal1988
 "       Github: https://github.com/yugal
 "       LinkedIn: http://www.linkedin.com/in/yugal1988
