@@ -140,6 +140,6 @@ cp myplugin.vim ~/.vim/plugin/
 
 ## License
 
-Copyright (c) Tim Pope.  Distributed under the same terms as Vim itself.
+Copyright (c) Yugal Jindle.  Distributed under the same terms as Vim itself.
 See `:help license`.
 
