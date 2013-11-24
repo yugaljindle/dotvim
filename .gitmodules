@@ -58,3 +58,19 @@
 	path = bundle/startify
 	url = https://github.com/mhinz/vim-startify.git
     ignore = untracked
+[submodule "bundle/mw-utils"]
+	path = bundle/mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+    ignore = untracked
+[submodule "bundle/tlib"]
+	path = bundle/tlib
+	url = https://github.com/tomtom/tlib_vim.git
+    ignore = untracked
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = https://github.com/garbas/vim-snipmate.git
+    ignore = untracked
+[submodule "bundle/snippets"]
+	path = bundle/snippets
+	url = https://github.com/honza/vim-snippets.git
+    ignore = untracked
