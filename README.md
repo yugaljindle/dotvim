@@ -3,6 +3,15 @@
 ## Description
 Just enough **vim customizations** to enable **IDE style** or even better **productive workflow** in vim.
 
+## Spirit of this vim distribution
+
+* Weave together **vim plugins** to create a **portable** and **cohesive** distribution where all **plugins play well together**.
+* Provide the most useful **IDE/VIM style** text editing features for a **faster**/**productive** workflow.
+* Be as **minimalist**/**precise** as possible keeping **vim** fast.
+* Have the most **convienient key-mappings** for the **most used features**.
+* **Easy installation** with **minimum hassle**. ( **\*nix agnostic** )
+* **Minimum** external dependencies and handled well if any.
+
 ## Installation
 
 ```

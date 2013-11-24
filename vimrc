@@ -145,8 +145,8 @@ inoremap <silent> <m-k> <c-o>:m-2<cr>
 vnoremap <silent> <m-j> :m'>+<cr>gv
 vnoremap <silent> <m-k> :m-2<cr>gv
 " Standard ctrl-c and ctrl-v functionality
-vmap <c-c> "+y
-vmap <c-x> "+c
+vmap <c-c> "+ygv
+vmap <c-x> "+x
 vmap <c-v> c<esc>"+p
 imap <c-v> <f2><c-r>+<f2>
 " Map <Space> to /(search) and Ctrl-<Space> to ?(search backwards)
