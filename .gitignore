@@ -1,4 +1,8 @@
 *.swp
 *.swo
 spell
+undo
+swap
+backup
+session
 .netrwhist
