@@ -86,7 +86,7 @@ cp myplugin.vim ~/.vim/plugin/
 ### Time Saving keyboard mappings
 
 1. Save with **shift+w** (**W**) and Quit with **shift-q** (**Q**). Additionally, save with **ctrl-s** as well when using Gvim.
-2. Press **alt-i** or **alt-I** or **ctrl-i** or **ctrl-I** **insert/visual/select mode** to change to **Normal mode**
+2. Press **alt-i** or **alt-I** **insert/visual/select mode** to change to **Normal mode**
 3. Press **,/** to exit search highlight after a search with **/**
 4. Press **space** or **ctrl-space** in **normal/visual** and start searching **forward**/**backwards** respectively.
 5. Press **shift-h** ( **H** ) to jump to line beginning and **shift-l** ( **L** ) to jump to line ending.
