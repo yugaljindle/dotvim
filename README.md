@@ -122,7 +122,8 @@ cp myplugin.vim ~/.vim/plugin/
     * **Ctrl-j** -> Move cursor down
     * **Ctrl-k** -> Move cursor up
     * **Ctrl-l** -> Move cursor right
-    * **tab** -> Cycle through windows
+    * **Tab** -> Move to next window
+    * **Shift-Tab** -> Move to previous window
 11. Move **current/selected lines** vertically (**Gvim** Only) :
     * **Alt-j** -> Move line/selection down
     * **Alt-k** -> Move line/selection up

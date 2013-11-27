@@ -66,7 +66,7 @@ if &term=~"xterm" || &term=~"screen" || has("gui_running")
     set mouse=a
     set ttyfast
     set t_Co=256
-    colorscheme jellybeans
+    colorscheme railscasts
 endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -121,6 +121,7 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-l> <c-w>l
 nnoremap <tab> <c-w>w
+nnoremap <s-tab> <c-w>W
 " (alt/ctrl)-(i/I) to <esc>
 inoremap i <esc>
 noremap  i <esc>
