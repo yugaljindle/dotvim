@@ -60,9 +60,11 @@ set laststatus=2
 set number
 set showcmd
 set autoread
+set gdefault
+set wildmenu
 set cursorline
 set noswapfile
-set gdefault
+set showbreak=.\ 
 set nrformats-=octal
 set pastetoggle=<f2>
 " Capable terminals only
@@ -258,7 +260,7 @@ let g:indentLine_faster=1
 let g:taboo_tab_format=' [%N]:%f%m'
 let g:taboo_renamed_tab_format=' [%N]:[%f]%m'
 " Maximizer
-let g:maximizer_default_mapping_key='<F11>'
+let g:maximizer_default_mapping_key='<f11>'
 " Airline
 let g:airline_theme='laederon'
 let g:airline_left_sep=''
