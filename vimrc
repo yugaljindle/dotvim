@@ -46,7 +46,7 @@ set incsearch
 " Color overides
 hi LineNr ctermfg=15
 hi LineNr ctermbg=235
-" Status line
+" Standard status line
 set statusline=
 set statusline +=%F%m%r%h%w%<\         "full path
 set statusline +=%h%=[type=%Y]\        "file type
@@ -57,6 +57,7 @@ set statusline +=%h%=\ [col=%c]\       "column number
 set laststatus=2
 " Others
 set number
+set showcmd
 set autoread
 set cursorline
 set noswapfile
@@ -170,6 +171,8 @@ noremap _ zM " Close all folds
 noremap + zR " Open all folds
 " Revert to last saved state
 noremap <silent>! :edit!<cr>
+" Y behave like other capitals
+map Y y$
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Auto Commands
@@ -224,3 +227,12 @@ let g:taboo_tab_format=' [%N]:%f%m'
 let g:taboo_renamed_tab_format=' [%N]:[%f]%m'
 " Maximizer
 let g:maximizer_default_mapping_key='<F11>'
+" Airline
+let g:airline_theme='laederon'
+let g:airline_left_sep=''
+let g:airline_right_sep=''
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+let g:airline_symbols.branch = '⎇'
+let g:airline#extensions#whitespace#enabled=0
