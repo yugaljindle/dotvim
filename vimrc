@@ -31,10 +31,11 @@ execute pathogen#helptags()
 syntax on
 filetype plugin on
 " Tabs
+set smarttab
 set expandtab
 set tabstop=4
 set shiftwidth=4
-set smarttab
+set shiftround
 " Indents
 set autoindent
 set smartindent
@@ -61,6 +62,8 @@ set showcmd
 set autoread
 set cursorline
 set noswapfile
+set gdefault
+set nrformats-=octal
 set pastetoggle=<f2>
 " Capable terminals only
 if &term=~"xterm" || &term=~"screen" || has("gui_running")
@@ -107,6 +110,7 @@ nnoremap t9 :tabn 9<cr>
 " Save & Quit
 nmap W :w<cr>
 nmap Q :q<cr>
+" Save with ctrl-s (Gvim only)
 noremap <c-s> :w!<cr>
 inoremap <c-s> <c-o>:w!<cr>
 " Sudo save
@@ -198,8 +202,32 @@ let NERDTreeMapOpenInTab='<c-t>'
 let g:nerdtree_tabs_open_on_gui_startup=0
 let g:nerdtree_tabs_open_on_console_startup=0
 " Startify
+let g:startify_custom_header = [
+    \ '  __     ___               ____            _     _                         _  ', 
+    \ '  \ \   / (_)_ __ ___     |  _ \  __ _ ___| |__ | |__   ___   __ _ _ __ __| | ',
+    \ '   \ \ / /| | `_ ` _ \    | | | |/ _` / __| `_ \| `_ \ / _ \ / _` | `__/ _` | ',
+    \ '    \ V / | | | | | | |   | |_| | (_| \__ \ | | | |_) | (_) | (_| | | | (_| | ',
+    \ '     \_/  |_|_| |_| |_|   |____/ \__,_|___/_| |_|_.__/ \___/ \__,_|_|  \__,_| ',
+    \ '', ''
+\ ]
+let g:startify_custom_footer = [
+    \ "",
+    \ "=============================================================================="
+\ ]
 let g:startify_change_to_dir=0
 au FileType startify setlocal buftype=
+let g:startify_skiplist = [
+    \ 'COMMIT_EDITMSG',
+    \ $VIMRUNTIME .'/doc',
+    \ '\.DS_Store'
+    \ ]
+let g:startify_bookmarks = ['~/.vimrc']
+let g:startify_list_order = [
+    \ ['   Sessions'], 'sessions',
+    \ ['   Bookmarks'], 'bookmarks',
+    \ ['   Recent files'], 'files',
+    \ ['   Recent files in current directory'], 'dir'
+    \ ]
 " GitGutter
 nmap cm <Plug>GitGutterNextHunk
 nmap mc <Plug>GitGutterPrevHunk
@@ -219,6 +247,10 @@ let g:ctrlp_max_files=0
 let g:ctrlp_max_depth=50
 let g:ctrlp_by_filename=1
 let g:ctrlp_working_path_mode=''
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|bower_components$\|node_modules$\|tmp$',
+  \ 'file': '\.so$\|\.pyc$\|\.exe$\|\.dat$'
+  \ }
 " IndentLine
 let g:indentLine_color_term=239
 let g:indentLine_faster=1
