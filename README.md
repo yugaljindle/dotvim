@@ -62,29 +62,28 @@ cp myplugin.vim ~/.vim/plugin/
 4. **IDE** style **GIT diff** as [gitgutter](https://github.com/airblade/vim-gitgutter.git)
     * Jump to **next** diff with **vn**
     * Jump to **prev** diff with **nv**
-5. **Snippet** completion like **Textmate** with [snipmate](https://github.com/garbas/vim-snipmate) and [snippets](https://github.com/honza/vim-snippets)
-6. Fast file **navigation** with [easymotion](https://github.com/Lokaltog/vim-easymotion.git)
+5. Fast file **navigation** with [easymotion](https://github.com/Lokaltog/vim-easymotion.git)
     * **;w** anchor to words
     * **;j** anchor to lines forward
     * **;k** anchor to lines backward
     * **;f** search for character forward
     * **;F** search for character backward
-7. Automatically closes **parenthesis**, **braces**, **brackets**, **quotes** as you type with [delimitMate](https://github.com/Raimondi/delimitMate.git)
-8. Tab completion of words inside of a search '**/**' with [SearchComplete](http://www.vim.org/scripts/script.php?script_id=474)
-9. Enhanced auto-completion with [neocomplcache](https://github.com/Shougo/neocomplcache.vim.git)
-10. Easily toggle comments with [tcomment](https://github.com/tomtom/tcomment_vim.git)
+6. Automatically closes **parenthesis**, **braces**, **brackets**, **quotes** as you type with [delimitMate](https://github.com/Raimondi/delimitMate.git)
+7. Tab completion of words inside of a search '**/**' with [SearchComplete](http://www.vim.org/scripts/script.php?script_id=474)
+8. Easily toggle comments with [tcomment](https://github.com/tomtom/tcomment_vim.git)
     * **Alt-/** to comment/uncomment lines ( **Gvim** only )
     * **gc** to comment/uncomment lines ( Both **vim** & **Gvim** )
-11. Automatically switch working directory to **VCS** root with [rooter](https://github.com/airblade/vim-rooter)
-12. Better **markdown** support with [markdown](https://github.com/plasticboy/vim-markdown)
-13. Visible **indents** with [indentLine](https://github.com/Yggdroot/indentLine)
-14. More expressive tabs bar with [taboo](https://github.com/gcmt/taboo.vim)
-15. Toggle **Maximize/Restore** your vim **split windows** without loosing original splits with [maximizer](https://github.com/szw/vim-maximizer.git)
+9. Automatically switch working directory to **VCS** root with [rooter](https://github.com/airblade/vim-rooter)
+10. Better **markdown** support with [markdown](https://github.com/plasticboy/vim-markdown)
+11. Visible **indents** with [indentLine](https://github.com/Yggdroot/indentLine)
+12. More expressive tabs bar with [taboo](https://github.com/gcmt/taboo.vim)
+13. Toggle **Maximize/Restore** your vim **split windows** without loosing original splits with [maximizer](https://github.com/szw/vim-maximizer.git)
     * **F11** to toggle **maximize/restore** the current vim split
-16. **Dashboard** with recently used files with [startify](https://github.com/mhinz/vim-startify.git)
-17. Manage **GIT** with [fugitive](https://github.com/tpope/vim-fugitive)
-18. Customized status line with [airline](https://github.com/bling/vim-airline)
-19. Add/change surrounding brackets/tags with [surround](https://github.com/tpope/vim-surround)
+14. **Dashboard** with recently used files with [startify](https://github.com/mhinz/vim-startify.git)
+15. Manage **GIT** with [fugitive](https://github.com/tpope/vim-fugitive)
+16. Customized status line with [airline](https://github.com/bling/vim-airline)
+17. Add/change surrounding brackets/tags with [surround](https://github.com/tpope/vim-surround)
+18. Vim autocompletion handled with <tab> using [supertab](https://github.com/ervandew/supertab)
 
 ### Time Saving keyboard mappings
 
