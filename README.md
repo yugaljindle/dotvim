@@ -84,6 +84,7 @@ cp myplugin.vim ~/.vim/plugin/
 16. **Dashboard** with recently used files with [startify](https://github.com/mhinz/vim-startify.git)
 17. Manage **GIT** with [fugitive](https://github.com/tpope/vim-fugitive)
 18. Customized status line with [airline](https://github.com/bling/vim-airline)
+19. Add/change surrounding brackets/tags with [surround](https://github.com/tpope/vim-surround)
 
 ### Time Saving keyboard mappings
 

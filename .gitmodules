@@ -82,3 +82,7 @@
 	path = bundle/airline
 	url = https://github.com/bling/vim-airline.git
     ignore = untracked
+[submodule "bundle/surround"]
+	path = bundle/surround
+	url = https://github.com/tpope/vim-surround
+    ignore = untracked

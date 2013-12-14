@@ -64,15 +64,34 @@ set gdefault
 set wildmenu
 set cursorline
 set noswapfile
+set scrolloff=3
 set showbreak=.\ 
 set nrformats-=octal
 set pastetoggle=<f2>
-" Capable terminals only
-if &term=~"xterm" || &term=~"screen" || has("gui_running")
+set backspace=indent,eol,start
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Extra settings for capable terminals
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+if &term=~"xterm" || &term=~"xterm-256color" || &term=~"screen" || has("gui_running")
     set mouse=a
     set ttyfast
     set t_Co=256
     colorscheme railscasts
+    if has("gui_running")
+        hi Normal guifg=#e8e8d3 guibg=#151515
+        " Diff colors
+        hi DiffAdd guifg=#d2ebbe guibg=#437019
+        hi DiffChange guibg=#2b5b77
+        hi DiffDelete guifg=#40000a guibg=#700009
+        hi DiffText gui=reverse guifg=#8fbfdc guibg=#000000
+    else
+        hi Normal ctermfg=188 ctermbg=233
+        " Diff colors
+        hi DiffAdd ctermfg=193 ctermbg=22
+        hi DiffChange ctermfg=none ctermbg=24
+        hi DiffDelete ctermfg=16 ctermbg=52
+        hi DiffText cterm=reverse ctermfg=81 ctermbg=16
+    endif
 endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -162,11 +181,13 @@ inoremap <silent> <m-j> <c-o>:m+<cr>
 inoremap <silent> <m-k> <c-o>:m-2<cr>
 vnoremap <silent> <m-j> :m'>+<cr>gv
 vnoremap <silent> <m-k> :m-2<cr>gv
-" Standard ctrl-c and ctrl-v functionality
+" Standard ctrl-c and ctrl-v functionality [ Additional clipboard ]
 vmap <c-c> "+ygv
 vmap <c-x> "+x
 vmap <c-v> c<esc>"+p
 imap <c-v> <f2><c-r>+<f2>
+map <leader>y "+y
+map <leader>p "+p
 " Map <Space> to /(search) and Ctrl-<Space> to ?(search backwards)
 map <space> /
 map <c-space> ?
@@ -189,84 +210,15 @@ autocmd InsertLeave * set nopaste
 au VimResized * exe "normal! \<c-w>="
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Source '~/.vim/plugin.vimrc' for plugin customizations
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+if filereadable(glob("~/.vim/plugin.vimrc")) 
+    source ~/.vim/plugin.vimrc
+endif
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Source '~/.vimrc.local' for local customizations
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if filereadable(glob("~/.vimrc.local")) 
     source ~/.vimrc.local
 endif
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Plugin Customizations
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" NERDTreeTab
-nmap <silent> <leader>. :NERDTreeTabsToggle<cr>
-let NERDTreeMapOpenInTab='<c-t>'
-let g:nerdtree_tabs_open_on_gui_startup=0
-let g:nerdtree_tabs_open_on_console_startup=0
-" Startify
-let g:startify_custom_header = [
-    \ '  __     ___               ____            _     _                         _  ', 
-    \ '  \ \   / (_)_ __ ___     |  _ \  __ _ ___| |__ | |__   ___   __ _ _ __ __| | ',
-    \ '   \ \ / /| | `_ ` _ \    | | | |/ _` / __| `_ \| `_ \ / _ \ / _` | `__/ _` | ',
-    \ '    \ V / | | | | | | |   | |_| | (_| \__ \ | | | |_) | (_) | (_| | | | (_| | ',
-    \ '     \_/  |_|_| |_| |_|   |____/ \__,_|___/_| |_|_.__/ \___/ \__,_|_|  \__,_| ',
-    \ '', ''
-\ ]
-let g:startify_custom_footer = [
-    \ "",
-    \ "=============================================================================="
-\ ]
-let g:startify_change_to_dir=0
-au FileType startify setlocal buftype=
-let g:startify_skiplist = [
-    \ 'COMMIT_EDITMSG',
-    \ $VIMRUNTIME .'/doc',
-    \ '\.DS_Store'
-    \ ]
-let g:startify_bookmarks = ['~/.vimrc']
-let g:startify_list_order = [
-    \ ['   Sessions'], 'sessions',
-    \ ['   Bookmarks'], 'bookmarks',
-    \ ['   Recent files'], 'files',
-    \ ['   Recent files in current directory'], 'dir'
-    \ ]
-" GitGutter
-nmap cm <Plug>GitGutterNextHunk
-nmap mc <Plug>GitGutterPrevHunk
-let g:gitgutter_sign_removed = '--'
-let g:gitgutter_sign_modified_removed = '~-'
-highlight GitGutterDelete guifg=#ff0000 guibg=NONE ctermfg=1 ctermbg=NONE
-" EasyMotion
-let g:EasyMotion_leader_key = ';'
-" tComment (GVim only) 
-nnoremap <silent> <m-/> :TComment<cr>
-vnoremap <silent> <m-/> :TCommentMaybeInline<cr>gv
-inoremap <silent> <m-/> <c-o>:TComment<cr>
-" Neocomplcache
-let g:neocomplcache_enable_at_startup = 1
-" CtrlP
-let g:ctrlp_max_files=0
-let g:ctrlp_max_depth=50
-let g:ctrlp_by_filename=1
-let g:ctrlp_working_path_mode=''
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|bower_components$\|node_modules$\|tmp$',
-  \ 'file': '\.so$\|\.pyc$\|\.exe$\|\.dat$'
-  \ }
-" IndentLine
-let g:indentLine_color_term=239
-let g:indentLine_faster=1
-" Taboo
-let g:taboo_tab_format=' [%N]:%f%m'
-let g:taboo_renamed_tab_format=' [%N]:[%f]%m'
-" Maximizer
-let g:maximizer_default_mapping_key='<f11>'
-" Airline
-let g:airline_theme='laederon'
-let g:airline_left_sep=''
-let g:airline_right_sep=''
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
-let g:airline_symbols.branch = '⎇'
-let g:airline#extensions#whitespace#enabled=0
