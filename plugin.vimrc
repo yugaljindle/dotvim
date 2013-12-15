@@ -116,3 +116,8 @@ endif
 let g:airline_symbols.branch = '⎇'
 let g:airline#extensions#whitespace#enabled=0
 let g:airline#extensions#bufferline#enabled=1
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Markdown
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:vim_markdown_initial_foldlevel=1
