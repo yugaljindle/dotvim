@@ -79,11 +79,13 @@ cp myplugin.vim ~/.vim/plugin/
 12. More expressive tabs bar with [taboo](https://github.com/gcmt/taboo.vim)
 13. Toggle **Maximize/Restore** your vim **split windows** without loosing original splits with [maximizer](https://github.com/szw/vim-maximizer.git)
     * **F11** to toggle **maximize/restore** the current vim split
-14. **Dashboard** with recently used files with [startify](https://github.com/mhinz/vim-startify.git)
+14. **Dashboard** with recently used files, sessions & bookmarks with [startify](https://github.com/mhinz/vim-startify.git)
 15. Manage **GIT** with [fugitive](https://github.com/tpope/vim-fugitive)
 16. Customized status line with [airline](https://github.com/bling/vim-airline)
-17. Add/change surrounding brackets/tags with [surround](https://github.com/tpope/vim-surround)
-18. Vim autocompletion handled with <tab> using [supertab](https://github.com/ervandew/supertab)
+17. View active buffers in current window with [vim-bufferline](https://github.com/bling/vim-bufferline)
+18. Add/change surrounding brackets/tags with [surround](https://github.com/tpope/vim-surround)
+19. Vim autocompletion handled with <tab> using [supertab](https://github.com/ervandew/supertab)
+
 
 ### Time Saving keyboard mappings
 
@@ -134,11 +136,13 @@ cp myplugin.vim ~/.vim/plugin/
 14. Press **Enter** to **:** in command mode
 15. **Copy/Cut** selected text with **ctrl-c/x** respectively and **paste** with **ctrl-v** in **insert mode**. ( Separate clipboards for **copy/cut** with **ctrl-c/x** & **y/d** )
 16. **Open**/**Close** folds:
-    * **-** to close fold
+    * **-** to close existing fold/selected fold
     * **=** to open fold
     * **_** to close all folds
     * **+** to open all folds
 17. **Revert** current buffer to **last saved state** with **!**
+18. **Cycle** through **buffers** in present window with **,\<space\>** and **delete** current buffer with **,\<backspace\>**
+19. Regular **visual selection** with **shift-up**, **shift-down**, **shift-left**, **shift-right**
 
 ### Misc.
 

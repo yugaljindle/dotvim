@@ -44,6 +44,9 @@ set hlsearch
 set ignorecase
 set smartcase
 set incsearch
+" Split orientation
+set splitbelow
+set splitright
 " Color overides
 hi LineNr ctermfg=15
 hi LineNr ctermbg=235
@@ -57,11 +60,13 @@ set statusline +=%h/%L%*               "tot  lines
 set statusline +=%h%=\ [col=%c]\       "column number
 set laststatus=2
 " Others
+set wrap
 set number
 set showcmd
 set autoread
 set gdefault
 set wildmenu
+set linebreak
 set cursorline
 set noswapfile
 set scrolloff=3
@@ -108,10 +113,16 @@ noremap <leader>h <c-w>H
 noremap <leader>j <c-w>J
 noremap <leader>k <c-w>K
 noremap <leader>l <c-w>L
+" Create empty splits
+noremap <leader>ss :new<cr>
+noremap <leader>vv :vnew<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Key bindings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Wrap movements
+nnoremap j gj
+nnoremap k gk
 " Tab switch 
 nnoremap th :tabfirst<cr>
 nnoremap tj :tabnext<cr>
@@ -192,14 +203,23 @@ map <leader>p "+p
 map <space> /
 map <c-space> ?
 " Toggle Folding
-noremap - zc " Close fold
-noremap = zo " Open fold
-noremap _ zM " Close all folds
-noremap + zR " Open all folds
+nnoremap - zc " Close fold
+nnoremap = zo " Open fold
+nnoremap _ zM " Close all folds
+nnoremap + zR " Open all folds
+vnoremap - zf " Create fold selection
 " Revert to last saved state
 noremap <silent>! :edit!<cr>
 " Y behave like other capitals
 map Y y$
+" Buffer navigation
+noremap <leader><space> :bn<cr>
+noremap <leader><bs> :bd!<cr>
+" Regular visual selection
+nmap <s-up> V
+nmap <s-down> V
+vmap <s-up> k
+vmap <s-down> j
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Auto Commands

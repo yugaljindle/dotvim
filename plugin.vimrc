@@ -115,3 +115,4 @@ if !exists('g:airline_symbols')
 endif
 let g:airline_symbols.branch = '⎇'
 let g:airline#extensions#whitespace#enabled=0
+let g:airline#extensions#bufferline#enabled=1

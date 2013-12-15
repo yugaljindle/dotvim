@@ -82,3 +82,7 @@
 	path = bundle/supertab
 	url = https://github.com/ervandew/supertab.git
     ignore = untracked
+[submodule "bundle/bufferline"]
+	path = bundle/bufferline
+	url = https://github.com/bling/vim-bufferline
+    ignore = untracked
