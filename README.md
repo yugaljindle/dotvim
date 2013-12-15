@@ -82,9 +82,8 @@ cp myplugin.vim ~/.vim/plugin/
 14. **Dashboard** with recently used files, sessions & bookmarks with [startify](https://github.com/mhinz/vim-startify.git)
 15. Manage **GIT** with [fugitive](https://github.com/tpope/vim-fugitive)
 16. Customized status line with [airline](https://github.com/bling/vim-airline)
-17. View active buffers in current window with [vim-bufferline](https://github.com/bling/vim-bufferline)
-18. Add/change surrounding brackets/tags with [surround](https://github.com/tpope/vim-surround)
-19. Vim autocompletion handled with <tab> using [supertab](https://github.com/ervandew/supertab)
+17. Add/change surrounding brackets/tags with [surround](https://github.com/tpope/vim-surround)
+18. Vim autocompletion handled with <tab> using [supertab](https://github.com/ervandew/supertab)
 
 
 ### Time Saving keyboard mappings

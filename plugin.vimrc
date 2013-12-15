@@ -105,6 +105,11 @@ let g:taboo_renamed_tab_format=' [%N]:[%f]%m'
 let g:maximizer_default_mapping_key='<f11>'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Markdown
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:vim_markdown_initial_foldlevel=1
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Airline
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:airline_theme='laederon'
@@ -115,9 +120,3 @@ if !exists('g:airline_symbols')
 endif
 let g:airline_symbols.branch = '⎇'
 let g:airline#extensions#whitespace#enabled=0
-let g:airline#extensions#bufferline#enabled=1
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Markdown
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:vim_markdown_initial_foldlevel=1
