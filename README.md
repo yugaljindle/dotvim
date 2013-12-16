@@ -142,6 +142,7 @@ cp myplugin.vim ~/.vim/plugin/
 17. **Revert** current buffer to **last saved state** with **!**
 18. **Cycle** through **buffers** in present window with **,\<space\>** and **delete** current buffer with **,\<backspace\>**
 19. Regular **visual selection** with **shift-up**, **shift-down**, **shift-left**, **shift-right**
+20. Add **quotes(' or "), brackets( [ or ( or { )** to selected text by pressing **', ", (, [, {** after selection.
 
 ### Misc.
 

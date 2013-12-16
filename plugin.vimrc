@@ -120,3 +120,12 @@ if !exists('g:airline_symbols')
 endif
 let g:airline_symbols.branch = '⎇'
 let g:airline#extensions#whitespace#enabled=0
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Surround
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+xmap ' S'
+xmap " S"
+xmap [ S[
+xmap { S{
+xmap ( S(

@@ -17,7 +17,7 @@
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Initialize
+" => Initialize 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Disable vi fallback
 set nocompatible
@@ -193,12 +193,12 @@ inoremap <silent> <m-k> <c-o>:m-2<cr>
 vnoremap <silent> <m-j> :m'>+<cr>gv
 vnoremap <silent> <m-k> :m-2<cr>gv
 " Standard ctrl-c and ctrl-v functionality [ Additional clipboard ]
-vmap <c-c> "+ygv
-vmap <c-x> "+x
-vmap <c-v> c<esc>"+p
-imap <c-v> <f2><c-r>+<f2>
-map <leader>y "+y
-map <leader>p "+p
+vnoremap <c-c> "+ygv
+vnoremap <c-x> "+x
+vnoremap <c-v> c<esc>"+p
+inoremap <c-v> <f2><c-r>+<f2>
+noremap <leader>y "+y
+noremap <leader>p "+p
 " Map <Space> to /(search) and Ctrl-<Space> to ?(search backwards)
 map <space> /
 map <c-space> ?
