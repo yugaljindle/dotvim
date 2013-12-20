@@ -35,8 +35,8 @@ git submodule update --init
 ln -s ~/.vim/vimrc ~/.vimrc
 ln -s ~/.vim/gvimrc ~/.gvimrc
 
-### Intstall bundles [Vundle](https://github.com/gmarik/vundle)
-vim +BundleInstall +qall
+### Vundle bundles will be installed the 1st time you open vim
+vim
 ```
 
 ## Feature Highlights:

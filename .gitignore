@@ -7,4 +7,3 @@ backup
 session
 .netrwhist
 bundle/*
-!bundle/vundle

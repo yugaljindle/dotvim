@@ -21,6 +21,17 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Disable vi fallback
 set nocompatible
+
+" Setup Vundle the first time
+let isVundle=1
+let readme=expand('~/.vim/bundle/vundle/README.md')
+if !filereadable(readme)
+    echo "Installing Vundle..."
+    echo ""
+    silent !mkdir -p ~/.vim/bundle
+    silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
+    let isVundle=0
+endif
 " Initiate Vundle
 filetype off
 set rtp+=~/.vim/bundle/vundle/
@@ -45,6 +56,11 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-surround'
 Bundle 'ervandew/supertab'
+" Install bundles the first time
+if isVundle==0
+    :BundleInstall
+    :qa!
+endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Customizations
