@@ -34,20 +34,9 @@ git submodule update --init
 ### Add symlinks
 ln -s ~/.vim/vimrc ~/.vimrc
 ln -s ~/.vim/gvimrc ~/.gvimrc
-```
 
-## Adding/Updating bundles/plugins ([Pathogen](https://github.com/tpope/vim-pathogen) style)
-```
-### Adding a new bundle ( Pathogen will auto-detect )
-cd ~/.vim
-git submodule add https://xyz.com/path/to/git/repository.git bundle/package-name
-
-### Updating existing bundles
-cd ~/.vim
-git submodule foreach git pull origin master
-
-### Vim will auto detect vim-scripts available inside the plugin directory
-cp myplugin.vim ~/.vim/plugin/
+### Intstall bundles [Vundle](https://github.com/gmarik/vundle)
+vim +BundleInstall +qall
 ```
 
 ## Feature Highlights:

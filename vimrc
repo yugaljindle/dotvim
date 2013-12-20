@@ -21,15 +21,36 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Disable vi fallback
 set nocompatible
-" Initiate Pathogen
-execute pathogen#infect()
-execute pathogen#helptags()
+" Initiate Vundle
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+" Bundle List
+Bundle 'gmarik/vundle'
+Bundle 'kien/ctrlp.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'terryma/vim-multiple-cursors'
+Bundle 'jistr/vim-nerdtree-tabs'
+Bundle 'Raimondi/delimitMate'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'tomtom/tcomment_vim'
+Bundle 'airblade/vim-rooter'
+Bundle 'plasticboy/vim-markdown'
+Bundle 'Yggdroot/indentLine'
+Bundle 'gcmt/taboo.vim'
+Bundle 'szw/vim-maximizer'
+Bundle 'mhinz/vim-startify'
+Bundle 'tpope/vim-fugitive'
+Bundle 'bling/vim-airline'
+Bundle 'tpope/vim-surround'
+Bundle 'ervandew/supertab'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Customizations
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on
-filetype plugin on
+filetype plugin indent on
 " Tabs
 set smarttab
 set expandtab
