@@ -85,15 +85,16 @@ let g:ctrlp_max_depth=50
 let g:ctrlp_by_filename=1
 let g:ctrlp_working_path_mode=''
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|bower_components$\|node_modules$\|tmp$',
-  \ 'file': '\.so$\|\.pyc$\|\.exe$\|\.dat$'
-  \ }
+    \ 'dir':  '\.git$\|\.hg$\|\.svn$\|bower_components$\|node_modules$\|tmp$',
+    \ 'file': '\.so$\|\.pyc$\|\.exe$\|\.dat$'
+\}
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => IndentLine
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:indentLine_color_term=239
-let g:indentLine_faster=1
+let g:indentLine_faster = 1
+let g:indentLine_char = '┊'
+let g:indentLine_color_term = 239
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Taboo
