@@ -40,9 +40,9 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
+Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'terryma/vim-multiple-cursors'
-Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'Raimondi/delimitMate'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tomtom/tcomment_vim'
@@ -56,6 +56,8 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-surround'
 Bundle 'ervandew/supertab'
+Bundle 'Valloric/MatchTagAlways'
+Bundle 'nelstrom/vim-visual-star-search'
 " Install bundles the first time
 if isVundle==0
     :BundleInstall
