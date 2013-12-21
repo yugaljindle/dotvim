@@ -39,9 +39,9 @@ call vundle#rc()
 " Bundle List
 Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
+Bundle 'mhinz/vim-signify'
 Bundle 'scrooloose/nerdtree'
 Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'airblade/vim-gitgutter'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'Raimondi/delimitMate'
 Bundle 'Lokaltog/vim-easymotion'
@@ -260,8 +260,9 @@ vnoremap - zf " Create fold selection
 noremap <silent>! :edit!<cr>
 " Y behave like other capitals
 map Y y$
-" Select till eol except newline
+" Selection shortcuts
 vnoremap ` $h
+nnoremap ` <s-v>
 " Buffer navigation
 noremap <leader><space> :bn<cr>
 noremap <leader><bs> :bd!<cr>

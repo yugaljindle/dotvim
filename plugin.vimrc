@@ -54,13 +54,15 @@ let g:startify_list_order = [
     \ ]
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => GitGutter
+" => Signify
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nmap cm <Plug>GitGutterNextHunk
-nmap mc <Plug>GitGutterPrevHunk
-let g:gitgutter_sign_removed = '--'
-let g:gitgutter_sign_modified_removed = '~-'
-highlight GitGutterDelete guifg=#ff0000 guibg=NONE ctermfg=1 ctermbg=NONE
+let g:signify_vcs_list = ['git', 'svn', 'hg']
+let g:signify_mapping_next_hunk = 'cm'
+let g:signify_mapping_prev_hunk = 'mc'
+let g:signify_sign_add               = '+'
+let g:signify_sign_change            = '~'
+let g:signify_sign_delete            = '_'
+let g:signify_sign_delete_first_line = '‾'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => EasyMotion

@@ -12,6 +12,10 @@ Just enough **vim customizations** to enable **IDE style** or even better **prod
 * **Easy installation** with **minimum hassle**. ( **\*nix agnostic** )
 * **Minimum** external dependencies and handled well if any.
 
+## Prerequisites
+* **Python**
+* **Ruby**
+
 ## Installation
 
 ```bash
@@ -47,9 +51,9 @@ vim
     * Press **,.** to toggle **NERDTree** explorer across tabs.
     * Open files in new tabs with **Ctrl-t** ( To match with **ctrlp** behavior )
 3. Sublime style **multiple cursors** for editing multiple lines at once with [multiple-cursors](https://github.com/terryma/vim-multiple-cursors.git)
-4. **IDE** style **GIT diff** as [gitgutter](https://github.com/airblade/vim-gitgutter.git)
-    * Jump to **next** diff with **vn**
-    * Jump to **prev** diff with **nv**
+4. **IDE** style **GIT diff** as [signify](https://github.com/mhinz/vim-signify)
+    * Jump to **next** diff with **cm**
+    * Jump to **prev** diff with **mc**
 5. Fast file **navigation** with [easymotion](https://github.com/Lokaltog/vim-easymotion.git)
     * **;w** anchor to words
     * **;j** anchor to lines forward
@@ -133,7 +137,9 @@ vim
 18. **Cycle** through **buffers** in present window with **,\<space\>** and **delete** current buffer with **,\<backspace\>**
 19. Regular **visual selection** with **shift-up**, **shift-down**, **shift-left**, **shift-right**
 20. Add **quotes(' or "), brackets( [ or ( or { )** to selected text by pressing **', ", (, [, {** after selection.
-21. **Select** to the **end of line** except the **newline** character with **v`**
+21. **Selection shortcuts**:
+    * Select the current line with **`**
+    * Select to the **end of line** except the **newline** character with **v`**
 
 ### Misc.
 
