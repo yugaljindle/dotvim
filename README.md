@@ -73,7 +73,7 @@ vim
 17. Add/change surrounding brackets/tags with [surround](https://github.com/tpope/vim-surround)
 18. Vim autocompletion handled with <tab> using [supertab](https://github.com/ervandew/supertab)
 19. Highlight matching **xml/html** tags with [MatchTagAlways](https://github.com/Valloric/MatchTagAlways)
-20. Search selected text with *** or ?** with [vim-visual-star-search](https://github.com/Valloric/MatchTagAlways)
+20. Search selected text with **\* or ?** with [vim-visual-star-search](https://github.com/Valloric/MatchTagAlways)
 
 
 ### Time Saving keyboard mappings
