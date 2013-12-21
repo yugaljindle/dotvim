@@ -126,7 +126,7 @@ vim
     * **Alt-k** -> Move line/selection up
 12. **Indent** & **Un-Indent** with **tab** & **shift-tab** respectively (**visual mode**)
 13. Press **:w!!** to save with **sudo** ( Useful for system files )
-14. Press **Enter** to **:** in command mode
+14. Press **Enter** in normal mode to **save** the file.
 15. **Copy/Cut** selected text with **ctrl-c/x** respectively and **paste** with **ctrl-v** in **insert mode**. ( Separate clipboards for **copy/cut** with **ctrl-c/x** & **y/d** )
 16. **Open**/**Close** folds:
     * **-** to close existing fold/selected fold
@@ -140,6 +140,7 @@ vim
 21. **Selection shortcuts**:
     * Select the current line with **`**
     * Select to the **end of line** except the **newline** character with **v`**
+22. Press **,t** move current **split** to new **tab**
 
 ### Misc.
 
