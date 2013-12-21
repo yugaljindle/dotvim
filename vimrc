@@ -162,6 +162,8 @@ noremap <leader>l <c-w>L
 " Create empty splits
 noremap <leader>ss :new<cr>
 noremap <leader>vv :vnew<cr>
+" Move split to new tab
+nnoremap <leader>t <c-W>T
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Key bindings
@@ -188,15 +190,17 @@ nnoremap t7 :tabn 7<cr>
 nnoremap t8 :tabn 8<cr>
 nnoremap t9 :tabn 9<cr>
 " Save & Quit
+cab W w
 nmap W :w<cr>
+cab Q q
 nmap Q :q<cr>
+cab WQ wq
+nmap <cr> :w<cr>
 " Save with ctrl-s (Gvim only)
 noremap <c-s> :w!<cr>
 inoremap <c-s> <c-o>:w!<cr>
 " Sudo save
 cmap w!! %!sudo tee > /dev/null %
-" Enter <cr> to :
-nnoremap <cr> :
 " Jump to start & end of line
 noremap H ^
 noremap L $
