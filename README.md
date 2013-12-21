@@ -1,4 +1,4 @@
-# .vim
+# .vim [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/yugal/dotvim/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 ## Description
 Just enough **vim customizations** to enable **IDE style** or even better **productive workflow** in vim.
@@ -14,7 +14,7 @@ Just enough **vim customizations** to enable **IDE style** or even better **prod
 
 ## Installation
 
-```
+```bash
 ### Backup '.vim' (if any)
 mv ~/.vim ~/.vim_bak
 
@@ -131,6 +131,7 @@ vim
 18. **Cycle** through **buffers** in present window with **,\<space\>** and **delete** current buffer with **,\<backspace\>**
 19. Regular **visual selection** with **shift-up**, **shift-down**, **shift-left**, **shift-right**
 20. Add **quotes(' or "), brackets( [ or ( or { )** to selected text by pressing **', ", (, [, {** after selection.
+21. **Select** to the **end of line** except the **newline** character with **v`**
 
 ### Misc.
 

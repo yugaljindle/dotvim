@@ -45,7 +45,7 @@ let g:startify_skiplist = [
     \ $VIMRUNTIME .'/doc',
     \ '\.DS_Store'
     \ ]
-let g:startify_bookmarks = ['~/.vimrc']
+let g:startify_bookmarks = ['~/.vim/vimrc']
 let g:startify_list_order = [
     \ ['   Sessions'], 'sessions',
     \ ['   Bookmarks'], 'bookmarks',

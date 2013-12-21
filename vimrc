@@ -96,18 +96,23 @@ set statusline +=%h%=%l%*              "curr line
 set statusline +=%h/%L%*               "tot  lines
 set statusline +=%h%=\ [col=%c]\       "column number
 set laststatus=2
+" Wild menu
+set wildmenu
+set wildmode=full
 " Others
 set wrap
 set number
 set showcmd
 set autoread
 set gdefault
-set wildmenu
 set linebreak
 set cursorline
 set noswapfile
+set modeline
+set modelines=5
 set scrolloff=3
 set showbreak=.\ 
+set timeoutlen=250
 set nrformats-=octal
 set pastetoggle=<f2>
 set backspace=indent,eol,start
@@ -119,6 +124,7 @@ if &term=~"xterm" || &term=~"xterm-256color" || &term=~"screen" || has("gui_runn
     set ttyfast
     set t_Co=256
     colorscheme railscasts
+    " Soothing diff colorscheme
     if has("gui_running")
         hi Normal guifg=#e8e8d3 guibg=#151515
         " Diff colors
@@ -140,6 +146,7 @@ endif
 " => Leader bindings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let mapleader = ","
+let g:mapleader = ","
 " Stop hls
 nmap <silent> <leader>/ :nohlsearch<cr>
 " Quickly edit/reload the vimrc file
@@ -158,8 +165,10 @@ noremap <leader>vv :vnew<cr>
 " => Key bindings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Wrap movements
-nnoremap j gj
-nnoremap k gk
+noremap j gj
+noremap k gk
+noremap <down> gj
+noremap <up> gk
 " Tab switch 
 nnoremap th :tabfirst<cr>
 nnoremap tj :tabnext<cr>
@@ -249,6 +258,8 @@ vnoremap - zf " Create fold selection
 noremap <silent>! :edit!<cr>
 " Y behave like other capitals
 map Y y$
+" Select till eol except newline
+vnoremap ` $h
 " Buffer navigation
 noremap <leader><space> :bn<cr>
 noremap <leader><bs> :bd!<cr>
@@ -269,9 +280,7 @@ au VimResized * exe "normal! \<c-w>="
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Source '~/.vim/plugin.vimrc' for plugin customizations
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-if filereadable(glob("~/.vim/plugin.vimrc")) 
-    source ~/.vim/plugin.vimrc
-endif
+source ~/.vim/plugin.vimrc
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Source '~/.vimrc.local' for local customizations
