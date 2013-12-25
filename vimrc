@@ -114,7 +114,6 @@ set modeline
 set modelines=5
 set scrolloff=3
 set showbreak=.\ 
-set timeoutlen=250
 set nrformats-=octal
 set pastetoggle=<f2>
 set backspace=indent,eol,start
