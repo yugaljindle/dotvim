@@ -7,9 +7,9 @@
 "                                      
 "   
 " By Yugal Jindle:
-"       Twitter: @yugal1988
+"       Twitter: @YugalJindle
 "       Github: https://github.com/yugal
-"       LinkedIn: http://www.linkedin.com/in/yugal1988
+"       LinkedIn: http://www.linkedin.com/in/yugaljindle
 "       Stackoverflow: http://stackoverflow.com/users/731963/yugal-jindle
 "
 " Github Repository: https://github.com/yugal/dotvim
