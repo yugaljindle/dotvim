@@ -1,4 +1,4 @@
-# .vim [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/yugal/dotvim/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+# .vim
 
 ## Description
 Just enough **vim customizations** to enable **IDE style** or even better **productive workflow** in vim.
