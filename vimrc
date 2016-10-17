@@ -78,8 +78,8 @@ filetype plugin indent on
 " Tabs
 set smarttab
 set expandtab
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set shiftround
 " Indents
 set autoindent
