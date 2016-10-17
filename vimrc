@@ -24,14 +24,17 @@ set shell=bash\ --noprofile\ --norc
 set nocompatible
 
 " Setup Vundle the first time
-let isVundle=1
+let isVundle=0
 let readme=expand('~/.vim/bundle/Vundle.vim/README.md')
 if !filereadable(readme)
     echo "Installing Vundle..."
     echo ""
     silent !mkdir -p ~/.vim/bundle
     silent !git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-    let isVundle=0
+    let isVundle=1
+endif
+if exists('dotvim')
+    let isVundle=1
 endif
 " Initiate Vundle
 filetype off
@@ -62,7 +65,7 @@ Plugin 'Valloric/MatchTagAlways'
 Plugin 'nelstrom/vim-visual-star-search'
 call vundle#end()
 " Install plugins the first time
-if isVundle==0
+if isVundle==1
     :PluginInstall
     :qa!
 endif

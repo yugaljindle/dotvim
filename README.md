@@ -20,27 +20,11 @@ Just enough **vim customizations** to enable **IDE style** or even better **prod
 ## Installation
 
 ```bash
-### Backup '.vim' (if any)
-mv ~/.vim ~/.vim_bak
-
-### Move ~/.vimrc (if any) to ~/.vimrc.local
-mv ~/.vimrc ~/.vimrc.local
-
-### Move ~/.gvimrc (if any) to ~/.gvimrc.local
-mv ~/.gvimrc ~/.gvimrc.local
-
-### Create new '.vim'
-cd ~
-mkdir .vim
-cd .vim
+### Clone in '~/.vim' & run ./setup.sh
+mkdir ~/.vim
+cd ~/.vim
 git clone https://github.com/yugaljindle/dotvim.git .
-
-### Add symlinks
-ln -s ~/.vim/vimrc ~/.vimrc
-ln -s ~/.vim/gvimrc ~/.gvimrc
-
-### Vundle bundles will be installed the 1st time you open vim
-vim
+./setup.sh
 ```
 
 ## Feature Highlights:
