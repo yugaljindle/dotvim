@@ -8,59 +8,62 @@
 "   
 " By Yugal Jindle:
 "       Twitter: @YugalJindle
-"       Github: https://github.com/yugal
+"       Github: https://github.com/yugaljindle
 "       LinkedIn: http://www.linkedin.com/in/yugaljindle
 "       Stackoverflow: http://stackoverflow.com/users/731963/yugal-jindle
 "
-" Github Repository: https://github.com/yugal/dotvim
+" Github Repository: https://github.com/yugaljindle/dotvim
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Initialize 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Disable vi fallback
+" Setup Vim
+set shell=bash\ --noprofile\ --norc
 set nocompatible
 
 " Setup Vundle the first time
 let isVundle=1
-let readme=expand('~/.vim/bundle/vundle/README.md')
+let readme=expand('~/.vim/bundle/Vundle.vim/README.md')
 if !filereadable(readme)
     echo "Installing Vundle..."
     echo ""
     silent !mkdir -p ~/.vim/bundle
-    silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
+    silent !git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
     let isVundle=0
 endif
 " Initiate Vundle
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-" Bundle List
-Bundle 'gmarik/vundle'
-Bundle 'kien/ctrlp.vim'
-Bundle 'mhinz/vim-signify'
-Bundle 'scrooloose/nerdtree'
-Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'terryma/vim-multiple-cursors'
-Bundle 'Raimondi/delimitMate'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'tomtom/tcomment_vim'
-Bundle 'airblade/vim-rooter'
-Bundle 'plasticboy/vim-markdown'
-Bundle 'Yggdroot/indentLine'
-Bundle 'gcmt/taboo.vim'
-Bundle 'szw/vim-maximizer'
-Bundle 'mhinz/vim-startify'
-Bundle 'tpope/vim-fugitive'
-Bundle 'bling/vim-airline'
-Bundle 'tpope/vim-surround'
-Bundle 'ervandew/supertab'
-Bundle 'Valloric/MatchTagAlways'
-Bundle 'nelstrom/vim-visual-star-search'
-" Install bundles the first time
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" Vundle Plugin List
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'mhinz/vim-signify'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'Raimondi/delimitMate'
+Plugin 'easymotion/vim-easymotion'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'airblade/vim-rooter'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'Yggdroot/indentLine'
+Plugin 'gcmt/taboo.vim'
+Plugin 'szw/vim-maximizer'
+Plugin 'mhinz/vim-startify'
+Plugin 'tpope/vim-fugitive'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tpope/vim-surround'
+Plugin 'ervandew/supertab'
+Plugin 'Valloric/MatchTagAlways'
+Plugin 'nelstrom/vim-visual-star-search'
+call vundle#end()
+" Install plugins the first time
 if isVundle==0
-    :BundleInstall
+    :PluginInstall
     :qa!
 endif
 
@@ -281,7 +284,9 @@ vmap <s-down> j
 " Set nopaste on leaving insert mode
 autocmd InsertLeave * set nopaste
 " Resize Vsplits on window resize
-au VimResized * exe "normal! \<c-w>="
+autocmd VimResized * exe "normal! \<c-w>="
+" Open all folds to begin with
+autocmd BufRead * normal zR
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Source '~/.vim/plugin.vimrc' for plugin customizations

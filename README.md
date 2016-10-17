@@ -12,9 +12,10 @@ Just enough **vim customizations** to enable **IDE style** or even better **prod
 * **Easy installation** with **minimum hassle**. ( **\*nix agnostic** )
 * **Minimum** external dependencies and handled well if any.
 
-## Prerequisites
-* **Python**
-* **Ruby**
+## Ensure you have the these installed
+* **bash**
+* **python**
+* **ruby**
 
 ## Installation
 
@@ -32,7 +33,7 @@ mv ~/.gvimrc ~/.gvimrc.local
 cd ~
 mkdir .vim
 cd .vim
-git clone https://github.com/yugal/dotvim.git .
+git clone https://github.com/yugaljindle/dotvim.git .
 
 ### Add symlinks
 ln -s ~/.vim/vimrc ~/.vimrc
