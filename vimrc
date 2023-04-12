@@ -61,7 +61,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-surround'
 Plugin 'ervandew/supertab'
-Plugin 'Valloric/MatchTagAlways'
+" Plugin 'Valloric/MatchTagAlways'
 Plugin 'nelstrom/vim-visual-star-search'
 call vundle#end()
 " Install plugins the first time
