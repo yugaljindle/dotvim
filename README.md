@@ -20,11 +20,7 @@ Just enough **vim customizations** to enable **IDE style** or even better **prod
 ## Installation
 
 ```bash
-### Clone in '~/.vim' & run ./setup.sh
-mkdir ~/.vim
-cd ~/.vim
-git clone https://github.com/yugaljindle/dotvim.git .
-./setup.sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/yugaljindle/dotvim/master/install.sh)"
 ```
 
 ## Feature Highlights:
